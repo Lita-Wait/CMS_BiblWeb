@@ -286,7 +286,7 @@ a:hover {
 /*Header*/
 header {
   height: 105px;
-  padding: 31px 0;
+  padding: 20px 0;
   background: #333d40;
 }
 header .logo {
@@ -2430,6 +2430,12 @@ div#carousel ~ span {
     margin-bottom: 0;
   }
 }
+/*----------------------------------------------------------------*/
+/*Logo*/
+.logo {
+   margin-left: 1px;
+}
+
 /*----------------------------------------------------------------*/
 /*Page Cover*/
 #pageCover {
