@@ -2202,12 +2202,12 @@ div#carousel ~ span {
 #nr_footer .container .goTop a {
   display: inline-block;
   width: 60px;
-  height: 40px;
+  height: 50px;
   line-height: 62px;
   border-radius: 100%;
   background: #2362ae;
   color: #FFF;
-  font-size: 32px;
+  font-size: 40px;
 }
 #nr_footer .container:after {
   content: '';
@@ -2238,7 +2238,7 @@ div#carousel ~ span {
   text-align: center;
   color: #FFF;
   padding: 110px 0 80px;
-  margin-top: -30px;
+  margin-top: -55px;
   font-family: 'Lora', sans-serif;
   overflow: hidden;
 }

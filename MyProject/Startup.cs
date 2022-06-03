@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Umbraco.Cms.Core.DependencyInjection;
 using Umbraco.Extensions;
 
-namespace MyProject
+namespace BiblWeb
 {
     public class Startup
     {
