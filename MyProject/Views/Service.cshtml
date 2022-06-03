@@ -1,0 +1,164 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Service>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+            <div class="row m04m">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+                        <span class="bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                        <span class="btn-text">Открыть меню</span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/aboutus" >О нас</a>
+                        </li>
+                        <li >
+                            <a  href="/project" >Проекты</a>
+                        </li>
+                        <li class="active ">
+                            <a  href="/service" >Услуги</a></li>
+                        <li>
+                            <a  href="/news" >Новости</a>
+                        </li>
+                        <li >
+                            <a  href="/contact" >Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> <!--Main Nav-->
+
+<section id="pageCover" class="row servicePage">
+        <div class="row pageTitle">Наши услуги</div>
+        <div class="row pageBreadcrumbs">
+            <ol class="breadcrumb">
+              <li><a asp-action="Index" asp-controller="Home">Главная</a></li>
+              <li class="active">услуги</li>
+            </ol>
+        </div>
+    </section>
+
+<section id="services" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="row m0 whyUs">
+                            <div class="col-sm-12">
+                                <div class="row m0 whyUsInner">
+                                    <div class="col-sm-7">
+                                        <h3>Почему стоит к нам придти<i class="fa fa-question"></i></h3>
+                                        <p>Спонсорство притягивает креативный пул лояльных изданий, отвоевывая рыночный сегмент. Нестандартный подход, отбрасывая подробности, разнородно ускоряет ребрендинг. Целевой сегмент рынка естественно усиливает эксклюзивный анализ зарубежного опыта, расширяя долю рынка.</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <ul class="list-inline tagFeatures">
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Строительство</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Производство</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Ремонт</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Услуги</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Проектирование</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Разработка</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Оптимизация</li>
+                                            <li><span class="badge"><i class="fa fa-check"></i></span> Другое</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m0 whatOffer">
+                            <div class="col-sm-12">
+                                <div class="row m0">
+                                    <h3>Услуги библиотеки</h3>
+                                    <span>Более того, ретроконверсия национального наследия повсеместно восстанавливает анализ рыночных цен, учитывая современные тенденции. Медийная связь, на первый взгляд, неестественно транслирует метод изучения рынка.<br>
+                                    Партисипативное планирование отталкивает мониторинг активности. Медийный канал, пренебрегая деталями, трансформирует тактический нишевый проект.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m0">
+                            <div class="col-sm-12">
+                                <div class="row m0 serviceFeature">
+                                    <div class="col-sm-4">
+                                        <img src="~/images/workers/mem1.png" alt="" class="monitor img-reponsive">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-desktop"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Досуг</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-briefcase"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Конкурсы</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-heart"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Мероприятия</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-arrows-alt"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Праздники</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-book"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Увлечения</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-text-width"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5>Обучение</h5>
+                                                <p>Лидерство в продажах, анализируя результаты рекламной кампании</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @await Umbraco.RenderMacroAsync("Aside")
+            </div>            
+        </div>
+    </section>

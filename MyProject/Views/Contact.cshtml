@@ -1,0 +1,81 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Contact>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+ <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+            <div class="row m04m">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+                        <span class="bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                        <span class="btn-text">Открыть меню</span>
+                    </button>
+                </div>
+
+                 <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/aboutus" >О нас</a>
+                        </li>
+                        <li>
+                            <a  href="/project" >Проекты</a>
+                        </li>
+                        <li>
+                            <a  href="/service" >Услуги</a></li>
+                        <li>
+                            <a  href="/news" >Новости</a>
+                        </li>
+                        <li class="active ">
+                            <a  href="/contact" >Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> <!--Main Nav-->
+
+<section id="pageCover" class="row">
+        <img src="/images/cover.jpg" alt="" class="pageCover">
+        <div class="row pageTitle">Наши контакты</div>
+        <div class="row pageBreadcrumbs">
+            <ol class="breadcrumb">
+              <li><a asp-action="Index" asp-controller="Home">Главная</a></li>
+              <li class="active">контакты</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="contacts" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="row m0">
+                    <div>
+                        <div class="row m0">
+                            <h3>Контактная информация</h3>
+                            <p>Медиаплан искажает рекламный клаттер. Формирование имиджа программирует сублимированный нестандартный подход, опираясь на опыт западных коллег.<br> Конвесия покупателя, суммируя приведенные примеры, раскручивает бизнес-план. </p>
+                            <ul class="list-inline">
+                                <li><i class="fa fa-home"></i> г. Новоуральск, ул. Фрунзе, 13</li>
+                                <li><i class="fa fa-phone"></i> +7 123 345 67 78</li>
+                                <li><i class="fa fa-envelope"></i> mail@mail.com</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row m0">
+                    <h3>Наша бибилотека на карте Google</h3>
+                    <div >
+                       <iframe class="mapBox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8633.650516463684!2d60.08445224072593!3d57.24961116675652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c19160049e5e3f%3A0xb6998f6de70ea86!2z0J3QvtCy0L7Rg9GA0LDQu9GM0YHQutCw0Y8g0KbQtdC90YLRgNCw0LvRjNC90LDRjyDQn9GD0LHQu9C40YfQvdCw0Y8g0JHQuNCx0LvQuNC-0YLQtdC60LA!5e0!3m2!1sru!2sru!4v1654021648549!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>

@@ -1,0 +1,147 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.AboutsUs>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+ 
+
+
+
+
+ <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+            <div class="row m04m">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+                        <span class="bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                        <span class="btn-text">Открыть меню</span>
+                    </button>
+                </div>
+
+                 <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li class="active ">
+                            <a href="/aboutus" >О нас</a>
+                        </li>
+                        <li>
+                            <a  href="/project" >Проекты</a>
+                        </li>
+                        <li>
+                            <a  href="/service" >Услуги</a></li>
+                        <li>
+                            <a  href="/news" >Новости</a>
+                        </li>
+                        <li>
+                            <a  href="/contact" >Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> <!--Main Nav-->
+    
+    <section id="pageCover" class="row aboutUs">
+        <div class="row pageTitle">О библиотеке</div>
+        <div class="row pageBreadcrumbs">
+            <ol class="breadcrumb">
+              <li><a asp-action="Index" asp-controller="Home">главная</a></li>
+              <li class="active">о библиотеке</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="aboutus" class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="row aboutContent">
+                        <div class="row aboutUsTexts m0 member">
+                            <div class="fleft textsPart">
+                                <h2>О Библиотеке</h2>
+                                <p>Поэтому клиентский спрос усиливает целевой трафик, размещаясь во всех медиа. Таргетирование, не меняя концепции, изложенной выше, уравновешивает коллективный пак-шот. Личность топ менеджера раскручивает мониторинг активности. Креативная концепция, в рамках сегодняшних воззрений, стремительно создает комплексный департамент маркетинга и продаж.</p>
+                                <p>Начальная стадия проведения исследования, суммируя приведенные примеры, искажает продуктовый ассортимент. Практика однозначно показывает, что размещение поразительно. </p>
+                            </div>
+                            <div class="fleft aboutImg">
+                                <img src="~/images/workers/about-us.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row m0 members">
+                            <div class="col-sm-4 member3_1 member">
+                                <div class="row m0">
+                                    <div class="row m0 memImg">
+                                        <img src="~/images/workers/mem1.png" alt="">
+                                    </div>
+                                    <div class="row m0 memberIntro">
+                                        <div class="row m0 name">Иван Иванов</div>
+                                        <div class="row m0 pro">специалист</div>
+                                        <div class="row m0">
+                                            <ul class="list-inline memberSocial">
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 member3_1 member">
+                                <div class="row m0">
+                                    <div class="row m0 memImg">
+                                        <img src="~/images/workers/mem2.png" alt="">
+                                    </div>
+                                    <div class="row m0 memberIntro">
+                                        <div class="row m0 name">Иван Иванов</div>
+                                        <div class="row m0 pro">специалист</div>
+                                        <div class="row m0">
+                                            <ul class="list-inline memberSocial">
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 member3_1 member">
+                                <div class="row m0">
+                                    <div class="row m0 memImg">
+                                        <img src="~/images/workers/mem3.png" alt="">
+                                    </div>
+                                    <div class="row m0 memberIntro">
+                                        <div class="row m0 name">Иван Иванов</div>
+                                        <div class="row m0 pro">специалист</div>
+                                        <div class="row m0">
+                                            <ul class="list-inline memberSocial">
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row partnersSlide">
+                        <h2>Нормативные документы</h2>
+                        <div class="owl-carousel partnerSlider">
+                            <div class="item"><h3>Устав библиотеки</h3><br/><a href="#"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                            <div class="item"><h3>Устав библиотеки</h3><br/><a href="#"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                            <div class="item"><h3>Устав библиотеки</h3><br/><a href="#"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                            <div class="item"><h3>Устав библиотеки</h3><br/><a href="#"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                            <div class="item"><h3>Устав библиотеки</h3><br/><a href="#"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+               @await Umbraco.RenderMacroAsync("Aside")
+            </div>            
+        </div>
+    </section>

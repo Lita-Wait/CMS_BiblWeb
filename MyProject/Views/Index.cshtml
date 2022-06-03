@@ -1,0 +1,361 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.MainView>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+	Layout = "Master.cshtml";
+}
+
+
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+            <div class="row m04m">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+                        <span class="bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                        <span class="btn-text">Открыть меню</span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="nav navbar-nav">
+                        <li class="active "><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/aboutus" >О нас</a>
+                        </li>
+                        <li>
+                            <a  href="/project" >Проекты</a>
+                        </li>
+                        <li>
+                            <a  href="/service" >Услуги</a></li>
+                        <li>
+                            <a  href="/news" >Новости</a>
+                        </li>
+                        <li >
+                            <a  href="/contact" >Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> <!--Main Nav-->
+
+
+<section id="nr_slider" class="row">
+        <div class="mainSliderContainer">
+            <div class="mainSlider">
+                <ul>
+                     <!--SLIDE 1  -->
+                    <li data-transition="boxslide" data-slotamount="7">
+                       <img src="~/images/sliders/slide1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <div class="caption sfr str" data-x="center" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">
+                            <h2>Центральная библиотека</h2>
+                       </div>
+                       <div class="caption sfl stl" data-x="center" data-y="225" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                            <div class="cont-row">Новоуральского городского округа</div>
+                       </div>
+                       <div class="caption sfb stb" data-x="400" data-y="375" data-hoffset="0" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                           <a asp-action="AboutUs" asp-controller="Home" type="button" class="btn btn-default">Подробнее</a>
+                       </div>                      
+                    </li>  
+                     <!--SLIDE 2 -->
+                    <li data-transition="boxslide" data-slotamount="7">
+                       <img src="~/images/sliders/slide2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <div class="caption sfr str" data-x="-100" data-y="135" data-speed="700" data-start="1700" data-easing="easeOutBack">
+                            <h3>Сайт для библиотеки</h3>
+                       </div>
+                       <div class="caption sfl stl" data-x="-100" data-y="190" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                            <h4>Читай вместе с Нами!</h4>
+                       </div>
+                       <div class="caption skewfromleft skewtoleft" data-x="-100" data-y="265" data-hoffset="-176" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                           <p> lorem </p>
+                       </div>
+                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="tools"><img src="~/images/sliders/man.png" alt="brifcase"></div>
+                       </div>                      
+                    </li>  
+                     <!--SLIDE 3 -->
+                    <li data-transition="boxslide" data-slotamount="7">
+                       <img src="~/images/sliders/slide3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <div class="caption sfr str" data-x="-100" data-y="135" data-speed="700" data-start="1700" data-easing="easeOutBack">
+                            <h3>Сайт для библиотекии</h3>
+                       </div>
+                       <div class="caption sfl stl" data-x="-100" data-y="190" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                            <h4>Читай вместе с Нами!</h4>
+                       </div>
+                       <div class="caption skewfromleft skewtoleft" data-x="-100" data-y="265" data-hoffset="-176" data-speed="500" data-start="1900" data-easing="easeOutBack">
+                           <p> lorem </p>
+                       </div>
+
+                       <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="sketch"><img src="~/images/sliders/man.png" alt="brifcase"></div>
+                       </div>                       
+                    </li>                          
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container sliderAfterTriangle"></div> <!--Triangle After Slider-->
+    </section> <!--Slider-->
+    
+    <section id="nr_services" class="row">
+        <div class="container">
+            <div class="row sectionTitles">
+                <h2 class="sectionTitle">Наши услуги</h2>
+                <div class="sectionSubTitle">в библиотеке</div>
+            </div>
+            <div class="row m0 text-center">
+                <div class="col-sm-3">
+                    <div class="row m0 service">
+                        <div class="row m0 innerRow">
+                            <i class="fa fa-laptop"></i>
+                            <div class="serviceName" data-hover="Онлайн-зал">Онлайн-зал</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row m0 service">
+                        <div class="row m0 innerRow">
+                            <i class="fa fa-film"></i>
+                            <div class="serviceName" data-hover="Медиатека">Медиатека  </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row m0 service">
+                        <div class="row m0 innerRow">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="serviceName" data-hover="Досуг">Досуг</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row m0 service">
+                        <div class="row m0 innerRow">
+                            <i class="fa fa-building-o"></i>
+                            <div class="serviceName" data-hover="Абонемент">Абонемент</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--Services-->
+    
+    <section id="projectsRow" class="row fullWidth">
+        <div class="row sectionTitles m0">
+            <h2 class="sectionTitle">Наши проекты</h2>
+            <div class="sectionSubTitle">актуальные</div>
+        </div>
+        <div class="row filtersRow m0">
+            <button type="button" class="collapsed project_filderButton visible-xs" data-toggle="collapse" data-target="#filters">
+                <span class="btn-text"><i class="fa fa-filter"></i> Сортировка</span>
+            </button>
+            <ul class="list-inline text-center collapse navbar-collapse filters" id="filters">
+                <li class="active" data-filter="*"><i class="fa fa-th"></i>Все</li>
+                <li data-filter=".Events">Мероприятия</li>
+                <li data-filter=".Contests">Конкурсы</li>
+                <li data-filter=".Stock">Акции</li>
+                <li data-filter=".Exhibitions">Выставки</li>
+                <li data-filter=".Holidays">Праздники</li>
+                <li data-filter=".Other">Другое</li>
+            </ul>
+        </div>
+        <div class="row projects m0" id="container">
+            <div class="project Events">
+                <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project1.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project Contests">
+                <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Название проекта (в разработке)">
+                    <img src="~/images/projects/project2.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">в разработке</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Название проекта (в разработке)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Stock">
+                <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project3.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Exhibitions">
+                <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project4.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Holidays">
+                <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project5.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Other">
+                <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project6.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section> <!--Projects-->
+    
+    <section id="latestPosts" class="row">
+        <div class="container">
+            <div class="row sectionTitles">
+                <h2 class="sectionTitle">Новости</h2>
+                <div class="sectionSubTitle">по актуальности</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 blog latest-blog">
+                    <div class="row m0 blogInner">
+                        <div class="row m0 blogDateTime">
+                            <i class="fa fa-calendar"></i> 31 августа 2022
+                        </div>
+                        <div class="row m0 featureImg">
+                            <a href="single-post.html">
+                                <img src="~/images/news/new1.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="row m0 postExcerpts">
+                            <div class="row m0 postExcerptInner">
+                                <a href="single-post.html" class="postTitle row m0"><h4>Подготавливается новый проект строительства</h4></a>
+                                <p> Выставочный стенд оправдывает рекламный блок. Департамент маркетинга и продаж однородно изменяет креативный рекламоноситель, учитывая современные тенденции. </p>
+                                @*<a href="single-post.html" class="readMore">Читать новость</a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 blog latest-blog">
+                    <div class="row m0 blogInner">
+                        <div class="row m0 blogDateTime">
+                            <i class="fa fa-calendar"></i> 31 августа 2022
+                        </div>
+                        <div class="row m0 featureImg">
+                            <a href="single-post.html">
+                                <img src="~/images/news/new2.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="row m0 postExcerpts">
+                            <div class="row m0 postExcerptInner">
+                                <a href="single-post.html" class="postTitle row m0"><h4>Подготавливается новый проект строительства</h4></a>
+                                <p> Выставочный стенд оправдывает рекламный блок. Департамент маркетинга и продаж однородно изменяет креативный рекламоноситель, учитывая современные тенденции. </p>
+                                @*<a href="single-post.html" class="readMore">Читать новость</a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 blog latest-blog">
+                    <div class="row m0 blogInner">
+                        <div class="row m0 blogDateTime">
+                            <i class="fa fa-calendar"></i> 31 августа 2022
+                        </div>
+                        <div class="row m0 featureImg">
+                            <a href="single-post.html">
+                                <img src="~/images/news/new3.jpg" alt="Подготавливается новый проект" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="row m0 postExcerpts">
+                            <div class="row m0 postExcerptInner">
+                                <a href="single-post.html" class="postTitle row m0"><h4>Подготавливается новый проект строительства</h4></a>
+                                <p> Выставочный стенд оправдывает рекламный блок. Департамент маркетинга и продаж однородно изменяет креативный рекламоноситель, учитывая современные тенденции. </p>
+                                @*<a href="single-post.html" class="readMore">Читать новость</a>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--Latest Blog-->
+    
+    <section id="testimonials" class="row">
+        <div class="container">
+            <div class="row sectionTitles">
+                <h2 class="sectionTitle whiteTC">Последние комментарии</h2>
+                <div class="sectionSubTitle whiteTC">справедливые</div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel testimonialSlider row m0">
+                    <div class="item">
+                        <div class="clientPhoto row m0">
+                            <img src="~/images/sliders/photo.png" alt="">
+                        </div>
+                        <div class="clientNameTitle row m0">Иван Иванов</div>
+                        <div class="arrow row m0">
+                            <img src="~/images/testimonial/arrow.png">
+                        </div>
+                        <div class="testimonial row m0">Социальный статус интуитивно концентрирует продвигаемый направленный маркетинг, повышая конкуренцию.</div>
+                    </div>
+                    <div class="item">
+                        <div class="clientPhoto row m0">
+                            <img src="~/images/sliders/photo.png" alt="">
+                        </div>
+                        <div class="clientNameTitle row m0">Иван Иванов</div>
+                        <div class="arrow row m0">
+                            <img src="~/images/testimonial/arrow.png">
+                        </div>
+                        <div class="testimonial row m0">Социальный статус интуитивно концентрирует продвигаемый направленный маркетинг, повышая конкуренцию.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--Testimonials-->

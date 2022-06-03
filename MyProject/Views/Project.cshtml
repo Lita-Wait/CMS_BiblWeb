@@ -1,0 +1,240 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Project>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+            <div class="row m04m">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav">
+                        <span class="bars">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                        <span class="btn-text">Открыть меню</span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/aboutus" >О нас</a>
+                        </li>
+                        <li class="active ">
+                            <a  href="/project" >Проекты</a>
+                        </li>
+                        <li>
+                            <a  href="/service" >Услуги</a></li>
+                        <li>
+                            <a  href="/news" >Новости</a>
+                        </li>
+                        <li >
+                            <a  href="/contact" >Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> <!--Main Nav-->
+
+<section id="pageCover" class="row projectPage">
+    <div class="row pageTitle">Наши проекты
+    </div>
+        <div class="row pageBreadcrumbs">
+            <ol class="breadcrumb">
+              <li><a asp-action="Index" asp-controller="Home">главная</a></li>
+              <li class="active">проекты</li>
+            </ol>
+        </div>
+</section>
+<div>
+     <section id="projectsRow" class="row fullWidth">
+        <div class="row sectionTitles m0">
+            <h2 class="sectionTitle">Наши проекты</h2>
+            <div class="sectionSubTitle">актуальные</div>
+        </div>
+        <div class="row filtersRow m0">
+            <button type="button" class="collapsed project_filderButton visible-xs" data-toggle="collapse" data-target="#filters">
+                <span class="btn-text"><i class="fa fa-filter"></i> Сортировка</span>
+            </button>
+            <ul class="list-inline text-center collapse navbar-collapse filters" id="filters">
+                <li class="active" data-filter="*"><i class="fa fa-th"></i>Все</li>
+                <li data-filter=".Events">Мероприятия</li>
+                <li data-filter=".Contests">Конкурсы</li>
+                <li data-filter=".Stock">Акции</li>
+                <li data-filter=".Exhibitions">Выставки</li>
+                <li data-filter=".Holidays">Праздники</li>
+                <li data-filter=".Other">Другое</li>
+            </ul>
+        </div>
+        <div class="row projects m0" id="container">
+
+            <div class="project Events">
+                <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project1.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Contests">
+                <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Название проекта (в разработке)">
+                    <img src="~/images/projects/project2.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">в разработке</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Название проекта (в разработке)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Stock">
+                <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project3.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Exhibitions">
+                <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project4.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Holidays">
+                <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="Название проекта (завершено)">
+                    <img src="~/images/projects/project5.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">завершено</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project Other">
+                <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project6.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project Other">
+                <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project7.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+          <div class="project Other">
+                <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project7.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+          <div class="project Other">
+                <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)">
+                    <img src="~/images/projects/project7.jpg" alt="Project 1" class="projectImg">
+                </a>
+                <div class="projectDetails row m0">
+                    <div class="fleft nameType">
+                        <div class="row m0 projectName">Название проекта</div>
+                        <div class="row m0 projectType">подготовка</div>
+                    </div>
+                    <div class="fright projectIcons btn-group" role="group">
+                        <a href="~/images/projects/project7.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section> <!--Projects-->
+</div>
+
+<div class="row sectionTitles" style="margin-top: 50px;">
+    <h2 class="sectionTitle">Галерея</h2>
+    <div class="sectionSubTitle">новое</div>
+ </div>
+
+
+<div class="row galleriesSlide">
+    <div class="owl-carousel gallerySlider">
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+        <div class="item"><img src="~/images/gallery/1.jpg" alt=""></div>
+    </div>
+</div> <!--Gallery-->
+
+
