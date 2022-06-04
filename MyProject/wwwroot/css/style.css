@@ -549,7 +549,7 @@ header .social_nav ul li:last-child {
 }
 #nr_slider .mainSliderContainer .tparrows:after {
   position: absolute;
-  color: #F33535;
+  color: #2362ae;
   top: -5px;
 }
 #nr_slider .mainSliderContainer .tparrows.tp-leftarrow:after {
@@ -755,10 +755,10 @@ header .social_nav ul li:last-child {
   }
 }
 #nr_slider .mainSliderContainer .mainSlider .caption .cont-row {
-  width: 395px;
-  padding: 15px 0;
+  
+  padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 20px;
+  font-size: 24px;
 }
 #nr_slider .mainSliderContainer .mainSlider .caption .cont-row span {
   padding: 0 13px;
@@ -1934,7 +1934,7 @@ div#carousel ~ span {
   border-radius: 100%;
   padding: 20px;
   margin: 0 auto;
-  border: 1px solid #FFF;
+  border: 1px solid #9c9c9c;
 }
 #testimonials .testimonialSlider .item .clientPhoto img {
   width: 100%;
@@ -1944,6 +1944,7 @@ div#carousel ~ span {
 }
 #testimonials .testimonialSlider .item .clientNameTitle {
   margin: 20px 0;
+  font-size: 24px
 }
 #testimonials .testimonialSlider .item .arrow {
   margin-bottom: 30px;
@@ -2238,7 +2239,7 @@ div#carousel ~ span {
   text-align: center;
   color: #FFF;
   padding: 110px 0 80px;
-  margin-top: -55px;
+  margin-top: 0px;
   font-family: 'Lora', sans-serif;
   overflow: hidden;
 }
