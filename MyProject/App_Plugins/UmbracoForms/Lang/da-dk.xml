@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language>
+  <area alias="sections">
+    <key alias="forms">Forms</key>
+  </area>
+  <area alias="formsDashboard">
+    <key alias="yourForms">Dine formularer</key>
+    <key alias="showMore">Vis mere</key>
+    <key alias="entries">Besvarelser</key>
+    <key alias="newVersion">Der er en ny version tilgængelig</key>
+    <key alias="installOverlayTitle">Tillykke</key>
+    <key alias="installOverlayDescription">Du har installeret Umbraco Forms - Lad os oprette din første formular</key>
+    <key alias="emptyOverlayTitle">Opret formular</key>
+    <key alias="emptyOverlayDescription">Du har ikke klargjort nogle formularer endnu, vil du starte på en nu?</key>
+    <key alias="createAForm">Opret formular</key>
+    <key alias="newVersionTitle">Der er en ny version tilgængelig</key>
+    <key alias="newVersionDescription">Nu kan du installere Umbraco Forms</key>
+    <key alias="upgradeNow">Opgrader nu</key>
+    <key alias="downloading">Henter og opgraderer Forms...</key>
+    <key alias="invalidLicense">Ugyldig licens</key>
+    <key alias="invalidLicenseValidFor">Din nuværende Forms licens udløber snart:</key>
+    <key alias="reconfigure">Omkonfigurer din licens nedenfor.</key>
+    <key alias="trialTitle">Tak fordi du afprøver Umbraco Forms</key>
+    <key alias="trialDescription">For at fortsætte med at bruge Umbraco Forms, skal du enten købe en licens eller bruge en eksisterende</key>
+    <key alias="configureLicense">Konfigurer eksisterende licens</key>
+    <key alias="buyLicense">Køb licens</key>
+    <key alias="buyLicenseTitle">Køb en licens</key>
+    <key alias="buyLicenseCopy">
+      <![CDATA[
+        <p>
+          Det tager kun <strong>et par minutter at købe en licens</strong> til Umbraco Forms og din <strong>licens bliver leveret øjeblikkeligt</strong>.
+        </p>
+        <p>
+          Du skal bare:
+          <ol>
+            <li>Klikke på køb-knappen nedenfor</li>
+            <li>Checkout med Kreditkort (eller faktura)</li>
+            <li>Konfigurere licensen inde fra Umbraco Forms og så er du klar</li>
+          </ol>
+        </p>
+      ]]>
+    </key>
+    <key alias="buyLink">Køb Umbraco Forms</key>
+    <key alias="buyLicenseFAQs">
+      <![CDATA[
+        <h4>FAQ:</h4>
+        <h5>Hvad koster det?</h5>
+        <p>Priserne starter ved &euro;209 og det er en engangsudgift (intet abonnement nødvendigt).</p>
+        <h5>Hvad dækker en license over?</h5>
+        <p>En licens dækker over et enkelt domæne og vil også virke på alle subdomæner. Det inkluderer desuden to yderligere development domæner.</p>
+        <h5>Kan jeg tilføje yderligere domæner til licensen?</h5>
+        <p>Ja, der kan godt tilføjes yderligere domæner. Du kan tilkøbe flere domæner til din licens fra din konto på Umbraco.com.</p>
+        <h5>Har du flere spørgsmål?</h5>
+        <p>
+          Bare rolig, der er <a class="green-link" href="https://our.umbraco.com/Documentation/Add-ons/The-Licensing-model/index-v7?utm_source=core&utm_medium=dashboard&utm_content=buy-faq-link&utm_campaign=formslicensing">flere detaljer i dokumentationen</a> og du er velkommen til <a class="green-link" href="https://umbraco.com/contact-us?utm_source=core&utm_medium=dashboard&utm_content=contact-us-link&utm_campaign=formslicensing">at kontakte os</a>. Vi svarer typisk i løbet af et par timer.
+        </p>      
+      ]]>
+    </key>
+    <key alias="configureLicenseTitle">Konfigurer en Umbraco Forms licens</key>
+    <key alias="configureLicenseCopy">
+      Hvis du allerede har købt Umbraco Forms, kan du automatisk hente og konfigurere din licens her. Du skal bare angive dine brugeroplysninger herunder og vi
+      finder din licens.
+    </key>
+    <key alias="configureLicenseFAQs">
+      <![CDATA[
+        <h4>FAQ:</h4>
+        <h5>Jeg ved ikke hvad mine brugeroplysninger er?</h5>
+        <p>
+          Det er en kombination af din e-mail og kodeord fra da du lavede din bestilling. Du kan altid <a class="green-link" href="https://shop.umbraco.com/profile/retrieve-your-password/">nulstille dit kodeord her</a>.
+        </p>
+        <h5>Hvordan køber jeg en licens?</h5>
+        <p>
+          Hvis du ikke har en licens, kan du <a class="btn-link green-link" ng-click="vm.status.state = 'buy'">få fat i en herfra og det tager kun et øjeblik</a>.
+        </p>
+      ]]>
+    </key>
+    <key alias="findLicenses">Find Licenser</key>
+    <key alias="invalidEmail">Forkert email eller kodeord</key>
+    <key alias="noLicensesAvailable">Der er ingen Umbraco Forms licenser tilgængelige på denne konto</key>
+    <key alias="availableLicensesTitle">Tilgængelige Licenser</key>
+    <key alias="foundLicenses">Fundede</key>
+    <key alias="foundLicensesAccount">på kontoen</key>
+    <key alias="noDomainsAssigned">Har ikke tilknyttet et domæne</key>
+    <key alias="setDomain">Tilknyt venligst et domæne til denne licens</key>
+    <key alias="configureAndInstall">Konfigurer og installer</key>
+    <key alias="installLicense">Installer denne licens</key>
+    <key alias="validDomains">Gyldige domæner</key>
+    <key alias="licenseValidOnDomain">Denne licens er gyldig til det nuværende domæne</key>
+    <key alias="licenseNotValidOnDomain">Denne licens er ikke gyldig til det nuværende domæne</key>
+    <key alias="plainTextPasswordWarning">
+      <![CDATA[
+        <h3 class="warning">Advarsel: indstillingerne for kodeord er sat til klar tekst i din konfiguration!</h3>
+        <p>Når du benytter et felt til kodeord på en formular, bliver det data som dine besøgende udfylder feltet med, gemt som klar tekst. Dette er et sikkerhedsmæssigt problem og bør undgås.</p>
+        <p>For at udbedre problemet kan du i din <span class="code">~/App_Plugins/UmbracoForms/UmbracoForms.config</span> fil sætte nøglen <span class="code">SavePlainTextPasswords</span> til <span class="code">False</span>.</p>
+        <p>Efter opdateringen af denne indstilling skal du sikre dig at sitets application pool bliver recycled så den nye indstilling træder i kraft.</p>
+        <p>Bemærk: kodeordsværdier vil stadig blive sendt videre til arbejdsgange, uanset indstillingen i <span class="code">UmbracoForms.config</span></p>
+      ]]>
+    </key>
+    <key alias="currentVersion">Nuværende installerede version af Umbraco Forms:</key>
+    <key alias="licenseConfiguredNotificationTitle">Licens er konfigureret</key>
+    <key alias="licenseConfiguredNotificationMessage">Umbraco Forms er blevet konfigureret til brug med dette website.</key>
+    <key alias="insufficientPermissionsError">Manglende tilladelser</key>
+    <key alias="insufficientPermissionsMessage">Du har ikke tilladelse til at oprette og varetage formularer.</key>
+    <key alias="insufficientPermissionsUpgradeMessage">Kun admin-brugere kan opgradere Umbraco Forms.</key>
+    <key alias="licensedDomains">Licenserede domæner</key>
+  </area>
+  <area alias="formCopy">
+    <key alias="title">Kopierer formular '%0%'</key>
+    <key alias="enterName">Angiv et navn til den kopierede formular</key>
+    <key alias="alsoCopyWorkflows">Skal arbejdsgange også kopieres?</key>
+    <key alias="copyToNewFolder">Kopier til en anden mappe?</key>
+    <key alias="selectLocation">Vælg placering til den kopierede formular</key>
+  </area>
+  <area alias="formCreate">
+    <key alias="title">Opret en ny formular eller mappe</key>
+    <key alias="emptyForm">Tom formular</key>
+    <key alias="emptyFormDescription">Start fra bunden</key>
+    <key alias="folder">Mappe</key>
+    <key alias="folderDescription">Bruges til at organisere formularer</key>
+    <key alias="enterFolderName">Angiv et navn til mappen</key>
+  </area>
+  <area alias="formExport">
+    <key alias="formExportedSuccess">Formularen blev eksporteret til en fil.</key>
+    <key alias="formExportedSuccess">Der opstod en fejl under lagring af formularen i en fil.</key>
+  </area>
+  <area alias="formImport">
+    <key alias="importInstruction1">
+      For at importere en formular skal du finde den eksporterede .json-fil på din computer ved at klikke på knappen 'Importer' (du bliver bedt om bekræftelse på næste skærmbillede).
+    </key>
+    <key alias="importInstruction2">
+      Hvis der allerede findes en formular med id'et for den valgte fil, vil den blive opdateret og flyttet til den valgte placering.
+      Hvis der ikke findes en eksisterende formular, oprettes en ny på det valgte sted.
+    </key>
+  </area>
+  <area alias="formPermissions">
+    <key alias="accessDeniedTitle">Ingen adgang</key>
+  </area>
+  <area alias="formMessages">
+    <key alias="saveErrorMessage">Undersøg venligst om dine indstillinger er gyldige.</key>
+  </area>
+  <area alias="formEdit">
+    <key alias="addQuestion">Tilføj spørgsmål</key>
+    <key alias="groupIsEmpty">Gruppen er tom</key>
+    <key alias="dropQuestionHere">Smid et spørgsmål her...</key>
+    <key alias="letGo">Yaay.. så går det løs</key>
+    <key alias="pageIsEmpty">Siden er tom</key>
+    <key alias="dropGroupHere">Smid en gruppe her...</key>
+    <key alias="addGroup">Tilføj en ny gruppe</key>
+    <key alias="addPage">Tilføj en ny side</key>
+    <key alias="pageTitlePlaceholder">Side uden titel (valgfri)</key>
+    <key alias="groupTitlePlaceholder">Gruppe uden titel (valgfri)</key>
+    <key alias="saveFieldFailedTitle">Felt kunne ikke gemmes</key>
+    <key alias="accessDeniedMessage">Du har ikke rettigheder til at rette på denne formular.</key>
+    <key alias="formSaved">Formular gemt</key>
+    <key alias="unableToLoadForm">Kan ikke indlæse formular</key>
+    <key alias="helpText">Hjælpetekst</key>
+    <key alias="editPage">Ret Side</key>
+    <key alias="editGroup">Ret Gruppe</key>
+    <key alias="addQuestion">Tilføj spørgsmål</key>
+    <key alias="editQuestion">Ret sprøgsmål</key>
+    <key alias="workflows">Arbejdsgange</key>
+  </area>
+  <area alias="formFileUpload">
+    <key alias="allowAllFiles">Tillad alle filer</key>
+    <key alias="allowOnlySpecifiedFiles">Tillad kun specifikke filer</key>
+    <key alias="predefinedAllowedFileTypes">Foruddefinerede tilladte filtyper</key>
+    <key alias="userDefinedAllowedFileTypes">Brugerdefinerede tilladte filtyper</key>
+    <key alias="deleteAllowedFileTypeConfirmationTitle">Bekræftelse</key>
+    <key alias="deleteAllowedFileTypeConfirmationDescription">Er du sikker på at du vil slette denne?</key>
+    <key alias="duplicateFileTypeErrorTitle">Filtypefejl</key>
+    <key alias="duplicateFileTypeErrorMessage">Kan ikke tilføje filtype fordi typen allerede eksisterer.</key>
+    <key alias="pickFile">Vælg fil</key>
+    <key alias="uploading">Uploader</key>
+    <key alias="currentFile">Nuværende fil</key>
+  </area>
+  <area alias="formPrevalues">
+    <key alias="addNewItem">Tilføj en ny værdi her</key>
+    <key alias="duplicateErrorTitle">Fejl på foruddefineret værdi</key>
+    <key alias="duplicateAddErrorMessage">Kan ikke tilføje værdi da værdien allerede eksisterer.</key>
+    <key alias="duplicateEditErrorMessage">Kan ikke ændre værdi da værdien allerede eksisterer.</key>
+  </area>
+  <area alias="formDelete">
+    <key alias="title">Er du sikker på at du vil slette %0% '%1%'?</key>
+    <key alias="timingNote">Bemærk at dette kan tage lang tid alt afhængig af antallet af besvarelser.</key>
+    <key alias="recordDeleteNote">Sletning af formularen vil også slette de tilknyttede poster.</key>
+    <key alias="recordDetail">Der er %0% poster, med den seneste indsendt på %1%.</key>
+    <key alias="cannotDeleteFolder">Den valgte mappe kan ikke slettes da den ikke er tom.</key>
+    <key alias="successMessageForForm">Sletning af formular er gennemført.</key>
+    <key alias="failedMessageForForm">Sletning af formular mislykkedes.</key>
+    <key alias="successMessageForFolder">Sletning af mappe er gennemført.</key>
+    <key alias="failedMessageForFolder">Sletning af mappe mislykkedes.</key>
+  </area>
+  <area alias="formEntries">
+    <key alias="title">%0% besvarelser</key>
+    <key alias="filterEntries">Filtrer besvarelser...</key>
+    <key alias="selectedRowsDescription">%0% af %1% er valgt</key>
+    <key alias="export">Eksporter</key>
+    <key alias="chooseExportFormat">Vælg et format som du til eksportere besvarelserne til</key>
+    <key alias="entriesNotStored">For nuværende bliver besvarelser ikke gemt i databasen.</key>
+    <key alias="enableStoreEntries">For at aktivere dette, skal du gå til indstillinger og aktivere indstillingen "Gem fortegnelser".</key>
+    <key alias="noEntriesInRange">Der findes endnu ingen besvarelser inden for valgte datoer.</key>
+    <key alias="noEntriesInRangeDetail">Vi kan ikke finde nogen besvarelser, er du sikker på at du har udgivet formularen? eller prøv at udvidde datointervalet.</key>
+    <key alias="noEntriesMatchingSearch">Vi kan ikke finde nogle besvarelser der matcher din søgning.</key>
+    <key alias="noEntriesMatchingSearchDetail">Prøv at søge efter noget andet, måske er du heldig næste gang.</key>
+    <key alias="selectedEntryPaging">Besvarelse %0% af %1%</key>
+    <key alias="previousEntry">Forrige besvarelse</key>
+    <key alias="nextEntry">Næste besvarelse</key>
+    <key alias="accessDeniedMessage">Du har ikke adgang til at se denne formulars besvarelser.</key>
+    <key alias="executeCompleteTitle">Udfør handling</key>
+    <key alias="executeSuccessMessage">Handling %0% er gennemført</key>
+    <key alias="executeErrorMessage">Handling %0% mislykkedes på grund af fejlen: %1%.</key>
+    <key alias="entryDetails">Besvarelse</key>
+    <key alias="closeDetails">Luk detaljer</key>
+    <key alias="submittedOn">Indsendt</key>
+    <key alias="updatedOn">Opdateret</key>
+    <key alias="fromPage">Forside</key>
+    <key alias="member">Medlem</key>
+    <key alias="state">Tilstand</key>
+    <key alias="uniqueId">Unikt ID</key>
+    <key alias="auditTrail">Revisionsspor</key>
+    <key alias="showAuditTrail">Vis revisionsspor</key>
+    <key alias="hideAuditTrail">Skjul revisionsspor</key>
+    <key alias="updatedBy">Opdateret af</key>
+    <key alias="updateRecordSuccess">Rekord opdateret</key>
+    <key alias="updateRecordError">Record kunne ikke opdateres</key>
+  </area>
+  <area alias="formMove">
+    <key alias="title"><![CDATA[Vælg den mappe du vil flytte <strong>%0%</strong> til i træstrukturen nedenfor.]]></key>
+    <key alias="successMessage"><![CDATA[<strong>%0%</strong> blev flyttet indunder <strong>%1%</strong>.]]></key>
+    <key alias="successNotificationHeader">Flyttet</key>
+    <key alias="successNotificationDescriptionForForm">Formularen blev flyttet til den valgte placering.</key>
+    <key alias="successNotificationDescriptionForFolder">Mappen blev flyttet til den valgte placering.</key>
+  </area>
+  <area alias="formRename">
+    <key alias="enterNewName">Angiv et nyt navn</key>
+    <key alias="successNotificationHeader">Omdøbt</key>
+    <key alias="successNotificationDescriptionForFolder">Mappen er blevet omdøbt.</key>
+  </area>
+  <area alias="formConditions">
+    <key alias="title">Betingelser</key>
+    <key alias="enableConditions">Aktiver betingelser</key>
+    <key alias="actionTypeShow">Vis</key>
+    <key alias="actionTypeHide">Skjul</key>
+    <key alias="logicTypeAll">alle</key>
+    <key alias="logicTypeAny">hvilken som helst</key>
+    <key alias="operatorIs">er</key>
+    <key alias="operatorIsNot">er ikke</key>
+    <key alias="operatorGreaterThen">er større end</key>
+    <key alias="operatorLessThen">er mindre end</key>
+    <key alias="operatorContains">indeholder</key>
+    <key alias="operatorStartsWith">starter med</key>
+    <key alias="operatorEndsWith">slutter med</key>
+    <key alias="thisFieldSetIf">dette fieldset hvis</key>
+    <key alias="ofTheFollowingMatch">af det følgende matcher</key>
+    <key alias="selectField">Vælg felt</key>
+    <key alias="addCondition">Tilføj betingelse</key>
+    <key alias="pageConditionsDescription">Definer betingelserne for at vise "Indsend" eller "Næste" knappen for siden (valgfri).</key>
+    <key alias="pageButtonConditionStatus">
+      <![CDATA[ %0% knapperne for denne side hvis <strong>%1%</strong> er af det følgende match:]]>
+    </key>
+    <key alias="fieldsetConditionStatus">
+      <![CDATA[ %0% denne gruppe hvis <strong>%1%</strong> er af det følgende match:]]>
+    </key>
+    <key alias="fieldConditionStatus">
+      <![CDATA[ %0% Dette spørgsmål hvis <strong>%1%</strong> er af det følgende match:]]>
+    </key>
+  </area>
+  <area alias="formThemes">
+    <key alias="noThemesAvailable">Der er ingen tilgængelige temaer. Tilføj temaer til /views/partials/forms/themes</key>
+  </area>
+  <area alias="formWorkflows">
+    <key alias="workflowNameLabel">Navn på arbejdsgang</key>
+    <key alias="workflowNameDescription">Angiv et beskrivende navn til din arbejdsgang</key>
+    <key alias="activeLabel">Aktiv</key>
+    <key alias="activeDescription">Aktiver eller deaktiver arbejdsgangen</key>
+    <key alias="includeSensitiveDataLabel">Inkluder følsomme data</key>
+    <key alias="includeSensitiveDataDescription">Skal følsomme data inkluderes når denne arbejdsgang udføres?</key>
+    <key alias="submitMessage">Send besked / Gå til side</key>
+    <key alias="approve">Godkend</key>
+    <key alias="automatic">automatisk</key>
+    <key alias="noWorkflowsAdded">Ingen arbejdsgange er tilføjet</key>
+    <key alias="configureWorkflow">Konfigurer arbejdsgang</key>
+    <key alias="saveFailedTitle">Lagring af arbejdsgang mislykkedes</key>
+    <key alias="closeConfirmationTitle">Bekræftelse</key>
+    <key alias="closeConfirmationMessage">Der er ændringer som ikke er blevet gemt. Er du sikker på at du vil lukke?</key>
+    <key alias="chooseWorkflow">Vælg arbejdsgang</key>
+    <key alias="on">Ved</key>
+    <key alias="onSubmit">Ved indsendelse</key>
+    <key alias="onSubmitDescription">Vi sørger for at udføre disse arbejdsgange for dig når formularen bliver afsendt</key>
+    <key alias="onApprove">Ved godkendelse</key>
+    <key alias="onApproveDescription">Disse arbejdsgange bliver udført når en besvarelse bliver godkendt</key>
+    <key alias="onApproveAutomaticDescription">Dette sker automatisk efter indsendelses-eventet med de nuværende formularindstillinger</key>
+    <key alias="defaultWorkflowName">Send besked / Gå til side</key>
+    <key alias="defaultWorkflowDescription">Vis en besked når formularen bliver indsendt eller gå til en Umbraco-side</key>
+    <key alias="addWorkflow">Tilføj arbejdsgang</key>
+    <key alias="messageOnSubmit">Besked ved indsendelse</key>
+    <key alias="messageOnSubmitDescription">Vis en besked når formularen er blevet indsendt</key>
+    <key alias="goToPage">Gå til side</key>
+    <key alias="goToPageDescription">Gå til en Umbraco-side når formularen er blevet indsendt</key>
+  </area>
+  <area alias="fieldSetColumns">
+    <key alias="title">Kolonner</key>
+    <key alias="setNumber">Angiv hvor mange kolonner du ønsker at have i din gruppe.</key>
+    <key alias="columnNumberDescription">Lige nu har denne gruppe %0%.</key>
+    <key alias="addColumn">Tilføj kolonne</key>
+  </area>
+  <area alias="fieldSettings">
+    <key alias="namePlaceholder">Angiv spørgsmål...</key>
+    <key alias="descriptionPlaceholder">Angiv hjælpetekst...</key>
+    <key alias="requiredLabel">Krævet etiket</key>
+    <key alias="chooseAnswerType">Vælg svartype</key>
+    <key alias="sensitiveData">Følsomme data</key>
+    <key alias="sensitiveDataDescription">Forhinder data fra at blive tilgået eller eksporteret hvis en bruger ikke har tilstrækkelige tilladelser.</key>
+    <key alias="sensitiveDataLabel">Ja, dette felt indeholder følsomme data</key>
+    <key alias="allowedFileUploadTypes">Tilladte filuploadtyper</key>
+    <key alias="prevalues">Foruddefinerede værdier</key>
+    <key alias="prevaluesProvideWithSources">Du skal enten angive en liste af værdier (foruddefinerede værdier) specifikt til dette felt, eller vælge en kilde til foruddefinerede værdier.</key>
+    <key alias="prevaluesProvide">Angiv en liste af værdier (foruddefinerede værdier) til dette felt.</key>
+    <key alias="prevaluesItems">Værdier</key>
+    <key alias="prevaluesSource">Kilde til foruddefinerede værdier</key>
+    <key alias="pressEnterToAdd">Tryk på enter for at tilføje en værdi</key>
+    <key alias="settings">Indstillinger</key>
+    <key alias="mandatory">Obligatorisk</key>
+    <key alias="enterRegex">Angiv et regulært udtryk</key>
+    <key alias="invalidPlaceholder">Skriv en besked for et ugyldigt felt...</key>
+    <key alias="allowMultipleFileUploads">Tillad upload af flere filer</key>
+    <key alias="multipleFilesToggleTextOn">Flere filer er tilladt</key>
+    <key alias="multipleFilesToggleTextOff">Kun en fil</key>
+  </area>
+  <area alias="formSettings">
+    <key alias="storeRecords">Gem besvarelser</key>
+    <key alias="storeRecordsDescription">
+      Afkryds denne boks for at gemme besvarelser i databasen.
+      Dette vil give dig mulighed for at gennemgå og eksportere besvarelser via oversigten.
+      Hvis du ikke vil gemme data (på grund af regler i din organisation), så skal du lade boksen være uafkrydset.
+    </key>
+    <key alias="storeRecordsConfirm">Ja, gem besvarelser i databasen så de kan gennemgås og blive eksporteret senere.</key>
+    <key alias="captions">Etiketter</key>
+    <key alias="captionsDescription">Ændr knappernes etiketter for Send, Næste og Forrige.</key>
+    <key alias="captionSubmitButton">'Send' knappens etiket</key>
+    <key alias="captionNextButton">'Næste' knappens etiket</key>
+    <key alias="captionPreviousButton">'Forrige' knappens etiket</key>
+    <key alias="styling">Fremtoning</key>
+    <key alias="stylingDescription">Tilføj en eller flere klasser for at indhylle din formular hvilket muliggør brugerdefineret styling, deaktivere standard styling og indlæse aktiver med klient afhængigheder.</key>
+    <key alias="formCssClass">Formular CSS klasse</key>
+    <key alias="disableDefaultStylesheet">Deaktiver standard stylesheet</key>
+    <key alias="loadWithClientDependency">Indlæs aktiver med klient afhængigheder</key>
+    <key alias="validation">Validering</key>
+    <key alias="validationDescription">Skriv bedre valideringsbeskeder, fjern valideringsetiketter og ændr eller deaktiver etiketten for krævet/obligatorisk.</key>
+    <key alias="mandatoryErrorMessage">Fejlbesked ved obligatorisk</key>
+    <key alias="mandatoryErrorMessageDescription">Besked som vises når et obligatorisk felt ikke er blevet udfyldt</key>
+    <key alias="invalidErrorMessage">Fejlbesked ved ugyldig</key>
+    <key alias="invalidErrorMessageDescription">Besked som vises når et felt ikke er udfyldt korrekt</key>
+    <key alias="showValidationSummary">Vis valideringsresume</key>
+    <key alias="hideFieldValidationLabels">Skjul felt valideringsetiketter</key>
+    <key alias="markFields">Marker felter</key>
+    <key alias="markFieldsNoIndicator">Ingen indikator</key>
+    <key alias="markMandatoryFields">Marker obligatoriske felter</key>
+    <key alias="markOptionalFields">Marker valgfri felter</key>
+    <key alias="indicator">Indikator</key>
+    <key alias="changeIndicatorSymbol">Ændr indikator-symbolet for obligatoriske felter</key>
+    <key alias="autocomplete">Autocomplete</key>
+    <key alias="autocompleteDescription">Tilføj en attribut til at styre formularens overordnede autocomplete opførsel.</key>
+    <key alias="autocompleteNone">Ingen</key>
+    <key alias="autocompleteOn">Tændt</key>
+    <key alias="autocompleteOff">Slukket</key>
+    <key alias="moderation">Moderation</key>
+    <key alias="moderationDescription">Tillad at besvarelser kan blive ændres efter indsendelse. Dette bruges oftes for besvarelser som er offentlige tilgængelige, såsom kommentarer til blog posteringer eller indsendelser til en social kompagne.</key>
+    <key alias="enablePostModeration">Tillad moderation efter indsendelse</key>
+  </area>
+  <area alias="formSecurity">
+    <key alias="saveSuccessTitle">Bruger formularsikkerhed gemt</key>
+    <key alias="saveErrorTitle">Bruger formularsikkerhed mislykkedes med at gemme</key>
+    <key alias="manageFormsLabel">Administrer formularer</key>
+    <key alias="manageFormsDescription">Tillad eller afvis adgang til at administrere formularer</key>
+    <key alias="manageWorkflowsLabel">Administrer arbejdsgange</key>
+    <key alias="manageWorkflowsDescription">Tillad eller afvis adgang til at administrere arbejdsgange for alle formularer</key>
+    <key alias="manageDatasourcesLabel">Administrer datakilder</key>
+    <key alias="manageDatasourcesDescription">Tillad eller afvis adgang til at administrere datakilder for alle formularer</key>
+    <key alias="managePrevalueSourcesLabel">Administrer kilde til foruddefinerede værdier</key>
+    <key alias="managePrevalueSourcesDescription">Tillad eller afvis adgang til at administrere kilder til foruddefinerede værdier for alle formularer</key>
+    <key alias="manageIndividualFormsLabel">Formular sikkerhed</key>
+    <key alias="manageIndividualFormsDescription">Tillad eller afvis adgang til individuelle formularer</key>
+    <key alias="startFolders">Start mapper</key>
+    <key alias="startFoldersDescription">Definer rodmappen eller mapperne for brugeren</key>
+    <key alias="selectNewStartFolders">Select Start Folders</key>
+    <key alias="formName">Formularnavn</key>
+    <key alias="hasAccess">Har adgang</key>
+    <key alias="viewEntriesLabel">Se indlæg</key>
+    <key alias="viewEntriesDescription">Giv eller nægt adgang til visning af indsendte bidrag</key>
+    <key alias="editEntriesLabel">Rediger poster</key>
+    <key alias="editEntriesDescription">Giv eller nægt adgang til redigering af indsendte indlæg</key>
+    <key alias="deleteTitle">Slet brugersikkerhed: %0%</key>
+    <key alias="deleteUserRecordNote">Ved at slette brugersikkerhedsposten vil brugerens tilladelser blive afledt fra de brugergrupper, som de er medlemmer af.</key>
+    <key alias="deleteSuccessMessage">Brugersikkerhedspost slettet.</key>
+    <key alias="deleteFailedMessage">Brugersikkerhedsposten kunne ikke slettes.</key>
+    <key alias="createTitle">Skab brugersikkerhed</key>
+    <key alias="createUserRecordNote">Når en brugerpost oprettes, vil den have forrang frem for eventuelle tilladelser, der er tildelt på brugergruppeniveau.</key>
+    <key alias="selectUser">Vælg bruger</key>
+    <key alias="allUsersHaveRecords">Alle brugere har allerede oprettet sikkerhedsregistreringer.</key>
+    <key alias="groupPermissions">Gruppetilladelser</key>
+    <key alias="userPermissions">Brugertilladelser</key>
+  </area>
+  <area alias="formDataSources">
+    <key alias="typeDescription">Vælg datakildetype</key>
+    <key alias="createForm">Skab formular</key>
+    <key alias="formName">Formular navn</key>
+    <key alias="selectFields">Vælg felter</key>
+    <key alias="selectFieldsDescription">Felter fra datakilden som du ønsker at inkludere på formularen.</key>
+    <key alias="setupForeignKeys">Indstil fremmednøgler</key>
+    <key alias="setupForeignKeysDescription">Vælg værdikolonnen til fremmednøgle-felter.</key>
+    <key alias="selectType">Vælg type</key>
+    <key alias="selectTypeDescription">Felttype du ønsker at bruge til de inkluderede felter (eller default værdi).</key>
+    <key alias="defaultValue">Default værdi</key>
+    <key alias="deleteConfirm">Er du sikker på at du vil slette datakilden %0%?</key>
+    <key alias="saveSuccessTitle">Datakilde gemt</key>
+    <key alias="saveErrorTitle">Lagring af datakilde mislykkedes</key>
+    <key alias="accessDeniedMessage">Du har ikke adgang til at redigere datakilder</key>
+  </area>
+  <area alias="formPrevalueSources">
+    <key alias="typeDescription">Vælg typen af kilden for foruddefinerede værdier</key>
+    <key alias="deleteConfirm">ER du sikker på at du vil slette kilden for foruddefinerede værdier %0%?</key>
+    <key alias="saveSuccessTitle">Kilde til foruddefinerede værdier gemt</key>
+    <key alias="saveErrorTitle">Lagring af kilde til foruddefinerede værdier mislykkedes</key>
+    <key alias="accessDeniedMessage">Du har ikke adgang til at redigere datakilder for foruddefinerede værdier</key>
+  </area>
+  <area alias="formProviderFieldTypes">
+    <key alias="checkboxName">Afkrydsningsfelt</key>
+    <key alias="checkboxDescription">Gengiver et afkrydsningsfelt.</key>
+    <key alias="checkboxDefaultValueLabel">Standard værdi</key>
+    <key alias="checkboxDefaultValueDescription">Angiv en standard værdi.</key>
+
+    <key alias="multipleChoiceName">Flere svarmuligheder</key>
+    <key alias="multipleChoiceDescription">Gengiver en samling af afkrydsningsfelter hvor det er muligt at vælge flere svarmuligheder.</key>
+    <key alias="multipleChoiceDefaultValueLabel">Standard værdi</key>
+    <key alias="multipleChoiceDefaultValueDescription">Angiv en standard værdi.</key>
+    <key alias="multipleChoiceShowLabelLabel">Vis etiket</key>
+    <key alias="multipleChoiceShowLabelDescription">Angiver om et felts etiket skal vises når formularen bliver gengivet.</key>
+
+    <key alias="dataConsentName">Data samtykke</key>
+    <key alias="dataConsentDescription">Gengiver et felt der spørger om brugeren samtykke til at indsamle data.</key>
+    <key alias="dataConsentAcceptCopyLabel">Accept kopi</key>
+    <key alias="dataConsentAcceptCopyDescription">Teksten der benyttes til at bekræfte samtykket.</key>
+
+    <key alias="dateName">Dato</key>
+    <key alias="dateDescription">Gengiver en datovælger.</key>
+    <key alias="datePlaceholderLabel">Stedfortrædende værdi</key>
+    <key alias="datePlaceholderDescription">Angiv en stedfortrædende værdi.</key>
+
+    <key alias="dropdownName">Dropdown-menu</key>
+    <key alias="dropdownDescription">Gengiver en liste af værdier i en dropdown-menu</key>
+    <key alias="dropdownDefaultValueLabel">Standard værdi</key>
+    <key alias="dropdownDefaultValueDescription">Angiv en standard værdi</key>
+    <key alias="dropdownAllowMultipleSelectionsLabel">Tillad flere svarmuligheder</key>
+    <key alias="dropdownAllowMultipleSelectionsDescription">Angiver om det er tilladt at vælge flere svar fra listen.</key>
+    <key alias="dropdownShowLabelLabel">Vis etiket</key>
+    <key alias="dropdownShowLabelDescription">Angiver om et felts etiket skal vises når formularen bliver gengivet.</key>
+    <key alias="dropdownAutocompleteAttributeLabel">Autocomplete attribut</key>
+    <key alias="dropdownAutocompleteAttributeDescription">Angiv en valgfri værdi til autocomplete attributten.</key>
+
+    <key alias="fileUploadName">Fil upload</key>
+    <key alias="fileUploadDescription">Gengiver et felt til fil-upload, som tillader at filer kan uploades.</key>
+
+    <key alias="hiddenName">Skjult felt</key>
+    <key alias="hiddenDescription">Gengiver et skjult felt.</key>
+    <key alias="hiddenDefaultValueLabel">Standard værdi</key>
+    <key alias="hiddenDefaultValueDescription">Angiv en standard værdi</key>
+
+    <key alias="passwordName">Kodeord</key>
+    <key alias="passwordDescription">Gengiver et felt til kodeord.</key>
+    <key alias="passwordPlaceholderLabel">Stedfortrædende værdi</key>
+    <key alias="passwordPlaceholderDescription">Angiv en stedfortrædende værdi.</key>
+
+    <key alias="singleChoiceName">Enkelt valg</key>
+    <key alias="singleChoiceDescription">Gengiver en liste af radio knapper som kun tillader at vælge en enkelt værdi.</key>
+    <key alias="singleChoiceDefaultValueLabel">Standard værdi</key>
+    <key alias="singleChoiceDefaultValueDescription">Angiv en standard værdi</key>
+    <key alias="singleChoiceShowLabelLabel">Vis etiket</key>
+    <key alias="singleChoiceShowLabelDescription">Angiver om et felts etiket skal vises når formularen bliver gengivet.</key>
+
+    <key alias="recaptcha2Name">reCAPTCHA v2</key>
+    <key alias="recaptcha2Description">Google reCAPTCHA v2.</key>
+    <key alias="recaptcha2ThemeLabel">Tema</key>
+    <key alias="recaptcha2ThemeDescription">reCAPTCHA v2 tema.</key>
+    <key alias="recaptcha2SizeLabel">Størrelse</key>
+    <key alias="recaptcha2SizeDescription">reCAPTCHA v2 størrelse.</key>
+    <key alias="recaptcha2ErrorMessageLabel">Fejlbesked</key>
+    <key alias="recaptcha2ErrorMessageDescription">Den fejlbesked der vises når brugeren ikke består reCAPTCHA-kontrollen.</key>
+
+    <key alias="reCAPTCHAV3WithScoreName">reCAPTCHA v3 med point</key>
+    <key alias="reCAPTCHAV3WithScoreDescription">Google reCAPTCHA v3 med point grænseværdi</key>
+    <key alias="reCAPTCHAV3WithScoreScoreThresholdLabel">Point grænseværdi</key>
+    <key alias="reCAPTCHAV3WithScoreScoreThresholdDescription">En fastlagt reCAPTCHA v3 pointsætning mellem 0 og 1, hvor besvarelser der scorer over vil blive accepteret. En højere score fanger flere spam-besvarelser, men øger også risikoen for at afvise gyldige besvarelser. For de fleste sites er 0.5 et fornuftigt valg.</key>
+    <key alias="reCAPTCHAV3WithScoreScoreErrorMessageLabel">Fejlbesked</key>
+    <key alias="reCAPTCHAV3WithScoreScoreErrorMessageDescription">Den fejlbesked der vises når brugeren ikke består reCAPTCHA-kontrollen.</key>
+    <key alias="reCAPTCHAV3WithScoreScoreSaveScoreLabel">Gem score</key>
+    <key alias="reCAPTCHAV3WithScoreScoreSaveScoreDescription">Gem den beregnede score med formularen.</key>
+
+    <key alias="titleAndDescriptionName">Titel og beskrivelse</key>
+    <key alias="titleAndDescriptionDescription">Dette er brugt til at angive noget beskrivende tekst.</key>
+    <key alias="titleAndDescriptionCaptionLabel">Overskrift</key>
+    <key alias="titleAndDescriptionCaptionDescription">Angiv en overskrift.</key>
+    <key alias="titleAndDescriptionBodyTextLabel">Brødtekst</key>
+    <key alias="titleAndDescriptionBodyTextDescription">Angiv en brødtekst.</key>
+
+    <key alias="longAnswerName">Langt svar</key>
+    <key alias="longAnswerDescription">Gengiver et textarea, beregnet til længere svar.</key>
+    <key alias="longAnswerDefaultValueLabel">Standard værdi</key>
+    <key alias="longAnswerDefaultValueDescription">Angiv en standard værdi</key>
+    <key alias="longAnswerPlaceholderLabel">Stedfortrædende værdi</key>
+    <key alias="longAnswerPlaceholderDescription">Angiv en stedfortrædende værdi.</key>
+    <key alias="longAnswerShowLabelLabel">Vis etiket</key>
+    <key alias="longAnswerShowLabelDescription">Angiver om et felts etiket skal vises når formularen bliver gengivet.</key>
+    <key alias="longAnswerAutocompleteAttributeLabel">Autocomplete attribut</key>
+    <key alias="longAnswerAutocompleteAttributeDescription">Angiv en valgfri værdi til autocomplete attributten.</key>
+    <key alias="longAnswerNumberOfRowsLabel">Antal af rækker</key>
+    <key alias="longAnswerNumberOfRowsDescription">Angiv antallet af rækker der vises for en besvarelse.</key>
+    <key alias="longAnswerMaximumLengthLabel">Maksimal længde</key>
+    <key alias="longAnswerMaximumLengthDescription">Indtast det maksimale antal tegn, der accepteres.</key>
+
+    <key alias="shortAnswerName">Kort svar</key>
+    <key alias="shortAnswerDescription">Gengiver et tekst input felt, til korte svar.</key>
+    <key alias="shortAnswerDefaultValueLabel">Standard værdi</key>
+    <key alias="shortAnswerDefaultValueDescription">Angiv en standard værdi</key>
+    <key alias="shortAnswerPlaceholderLabel">Stedfortrædende værdi</key>
+    <key alias="shortAnswerPlaceholderDescription">Angiv en stedfortrædende værdi.</key>
+    <key alias="shortAnswerShowLabelLabel">Vis etiket</key>
+    <key alias="shortAnswerShowLabelDescription">Angiver om et felts etiket skal vises når formularen bliver gengivet.</key>
+    <key alias="shortAnswerMaximumLengthLabel">Maksimal længde</key>
+    <key alias="shortAnswerMaximumLengthDescription">Indtast det maksimale antal tegn, der accepteres.</key>
+    <key alias="shortAnswerFieldTypeLabel">Felttype</key>
+    <key alias="shortAnswerFieldTypeDescription">Vælg den forventede type information.</key>
+    <key alias="shortAnswerAutocompleteAttributeLabel">Autocomplete attribut</key>
+    <key alias="shortAnswerAutocompleteAttributeDescription">Angiv en valgfri værdi til autocomplete attributten.</key>
+  </area>
+  <area alias="formProviderWorkflows">
+    <key alias="changeRecordStateName">Ændr på besvarelse</key>
+    <key alias="changeRecordStateDescription">Ændrer på en besvarelse underbearbejdelse når der matches på et/flere ord.</key>
+    <key alias="changeRecordStateWordsLabel">Ord</key>
+    <key alias="changeRecordStateWordsDescription">Kommasepareret liste af ord der sammenlignes imod.</key>
+    <key alias="changeRecordStateActionLabel">Handling</key>
+    <key alias="changeRecordStateActionDescription">Hvad der sker hvis der er et match.</key>
+
+    <key alias="postAsXMLName">Send som XML</key>
+    <key alias="postAsXMLDescription">Sender formularen som XML til en URL.</key>
+    <key alias="postAsXMLUrlLabel">URL</key>
+    <key alias="postAsXMLUrlDescription">Angiv URL'en der skal sendes til.</key>
+    <key alias="postAsXMLMethodLabel">Metode</key>
+    <key alias="postAsXMLMethodDescription">POST eller GET.</key>
+    <key alias="postAsXMLXsltFileLabel">XSLT-fil</key>
+    <key alias="postAsXMLXsltFileDescription">Transformer XML før afsendelse.</key>
+    <key alias="postAsXMLFieldsLabel">Felter</key>
+    <key alias="postAsXMLFieldsDescription">Kortlæg de nødvendige felter.</key>
+    <key alias="postAsXMLUsernameLabel">Bruger</key>
+    <key alias="postAsXMLUsernameDescription">(valgfri)</key>
+    <key alias="postAsXMLPasswordLabel">Kodeord</key>
+    <key alias="postAsXMLPasswordDescription">(valgfri)</key>
+
+    <key alias="sendFormToURLName">Send formular til URL</key>
+    <key alias="sendFormToURLDescription">Sender formularen til en URL, enten via HTTP POST eller GET.</key>
+    <key alias="sendFormToURLUrlLabel">URL</key>
+    <key alias="sendFormToURLUrlDescription">Angiv URL'en der skal sendes til.</key>
+    <key alias="sendFormToURLMethodLabel">Metode</key>
+    <key alias="sendFormToURLMethodDescription">POST eller GET.</key>
+    <key alias="sendFormToURLStandardFieldsLabel">Standard Felter</key>
+    <key alias="sendFormToURLStandardFieldsDescription">Kortlæg hvilkensomhelst standard formular information til afsendelse.</key>
+    <key alias="sendFormToURLFieldsLabel">Felter</key>
+    <key alias="sendFormToURLFieldsDescription">Kortlæg de nødvendige felter.</key>
+    <key alias="sendFormToURLUsernameLabel">Bruger</key>
+    <key alias="sendFormToURLUsernameDescription">(valgfri)</key>
+    <key alias="sendFormToURLPasswordLabel">Kodeord</key>
+    <key alias="sendFormToURLPasswordDescription">(valgfri)</key>
+
+    <key alias="saveAsAnXMLFileName">Gem som en XML-fil</key>
+    <key alias="saveAsAnXMLFileDescription">Gemmer besvarelsen af formularen som en XML-fil via XSLT.</key>
+    <key alias="saveAsAnXMLFilePathLabel">Sti</key>
+    <key alias="saveAsAnXMLFilePathDescription">Angiver stien til placeringen af filen.</key>
+    <key alias="saveAsAnXMLFileExtensionLabel">Endelse</key>
+    <key alias="saveAsAnXMLFileExtensionDescription">Filendelsen.</key>
+    <key alias="saveAsAnXMLFileXsltFileLabel">XSLT-fil</key>
+    <key alias="saveAsAnXMLFileXsltFileDescription">Transformer XML før den gemmes.</key>
+
+    <key alias="saveAsUmbracoContentNodeName">Gem som Umbraco inholdsnode</key>
+    <key alias="saveAsUmbracoContentNodeDescription">Gemmer formularværdierne som indholdsnoder ved hjælp af en specifik dokumenttype.</key>
+    <key alias="saveAsUmbracoContentNodeFieldsLabel">Dokumenttype</key>
+    <key alias="saveAsUmbracoContentNodeFieldsDescription">Kortlæg dokumenttype.</key>
+    <key alias="saveAsUmbracoContentNodePublishLabel">Udgiv</key>
+    <key alias="saveAsUmbracoContentNodePublishDescription">Udgiv noden øjeblikkeligt.</key>
+    <key alias="saveAsUmbracoContentNodeRootNodeLabel">Gem placering</key>
+    <key alias="saveAsUmbracoContentNodeRootNodeDescription">Vælg hvor den oprettede inholdsnode skal gemmes til.</key>
+
+    <key alias="sendEmailName">Send email</key>
+    <key alias="sendEmailDescription">Sender resultatet af en formular til en emailadresse.</key>
+    <key alias="sendEmailEmailLabel">Modtager email</key>
+    <key alias="sendEmailEmailDescription">Angiv modtagerens emailadresse(r).</key>
+    <key alias="sendEmailCcEmailLabel">CC Email</key>
+    <key alias="sendEmailCcEmailDescription">Angiv CC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendEmailBccEmailLabel">BCC Email</key>
+    <key alias="sendEmailBccEmailDescription">Angiv BCC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendEmailSenderEmailLabel">Afsenderemail</key>
+    <key alias="sendEmailSenderEmailDescription">Angiv afsenderemail (hvis feltet er blank benyttes indstillingen fra konfiguration).</key>
+    <key alias="sendEmailReplyToEmailLabel">Svar-Emailadresse</key>
+    <key alias="sendEmailReplyToEmailDescription">Angiv den emailadresse som der bruges som svaradresse (hvis nødvendigt).</key>
+    <key alias="sendEmailSubjectLabel">Emne</key>
+    <key alias="sendEmailSubjectDescription">Angiv emnet.</key>
+    <key alias="sendEmailMessageLabel">Besked</key>
+    <key alias="sendEmailMessageDescription">Angiv en introduktion.</key>
+    <key alias="sendEmailAttachmentLabel">Vedhæftning</key>
+    <key alias="sendEmailAttachmentDescription">Vedhæft en filupload til emailen.</key>
+
+    <key alias="sendEmailWithTemplateRazorName">Send email med skabelon (Razor)</key>
+    <key alias="sendEmailWithTemplateRazorDescription">Send formularens besvarelse til en/flere emailadresse/r ved hjælp af en Razor .cshtml skabelon.</key>
+    <key alias="sendEmailWithTemplateRazorEmailLabel">Modtager email</key>
+    <key alias="sendEmailWithTemplateRazorEmailDescription">Angiv modtagerens emailadresse(r).</key>
+    <key alias="sendEmailWithTemplateRazorCcEmailLabel">CC Email</key>
+    <key alias="sendEmailWithTemplateRazorCcEmailDescription">Angiv CC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendEmailWithTemplateRazorBccEmailLabel">BCC Email</key>
+    <key alias="sendEmailWithTemplateRazorBccEmailDescription">Angiv BCC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendEmailWithTemplateRazorSenderEmailLabel">Afsenderemail</key>
+    <key alias="sendEmailWithTemplateRazorSenderEmailDescription">Angiv afsenderemail (hvis feltet er blank benyttes indstillingen fra konfiguration).</key>
+    <key alias="sendEmailWithTemplateRazorReplyToEmailLabel">Svar-Emailadresse</key>
+    <key alias="sendEmailWithTemplateRazorReplyToEmailDescription">Angiv den emailadresse som der bruges som svaradresse (hvis nødvendigt).</key>
+    <key alias="sendEmailWithTemplateRazorSubjectLabel">Emne</key>
+    <key alias="sendEmailWithTemplateRazorSubjectDescription">Angiv emnet</key>
+    <key alias="sendEmailWithTemplateRazorRazorViewFilePathLabel">Email Skabelon</key>
+    <key alias="sendEmailWithTemplateRazorRazorViewFilePathDescription">Stien til det Razor view som du vil bruge til at generere emailen. Emailskabeloner er gemt under /views/partials/forms/emails.</key>
+    <key alias="sendEmailWithTemplateRazorAttachmentLabel">Vedhæftning</key>
+    <key alias="sendEmailWithTemplateRazorAttachmentDescription">Vedhæft en filupload til emailen.</key>
+
+    <key alias="sendXSLTTransformedEmailName">Send XSLT transformed email</key>
+    <key alias="sendXSLTTransformedEmailDescription">Send den resultatet af formularen til en emailadresse.</key>
+    <key alias="sendXSLTTransformedEmailEmailLabel">Modtager email</key>
+    <key alias="sendXSLTTransformedEmailEmailDescription">Angiv modtagerens emailadresse(r).</key>
+    <key alias="sendXSLTTransformedEmailCcEmailLabel">CC Email</key>
+    <key alias="sendXSLTTransformedEmailCcEmailDescription">Angiv CC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendXSLTTransformedEmailBccEmailLabel">BCC Email</key>
+    <key alias="sendXSLTTransformedEmailBccEmailDescription">Angiv BCC email addresser (hvis den er nødvendig).</key>
+    <key alias="sendXSLTTransformedEmailSenderEmailLabel">Afsenderemail</key>
+    <key alias="sendXSLTTransformedEmailSenderEmailDescription">Angiv afsenderemail (hvis feltet er blank benyttes indstillingen fra konfiguration).</key>
+    <key alias="sendXSLTTransformedEmailReplyToEmailLabel">Svar-Emailadresse</key>
+    <key alias="sendXSLTTransformedEmailReplyToEmailDescription">Angiv den emailadresse som der bruges som svaradresse (hvis nødvendigt).</key>
+    <key alias="sendXSLTTransformedEmailSubjectLabel">Emne</key>
+    <key alias="sendXSLTTransformedEmailSubjectDescription">Angiv emnet</key>
+    <key alias="sendXSLTTransformedEmailXsltFileLabel">XSLT-fil</key>
+    <key alias="sendXSLTTransformedEmailXsltFileDescription">Transformer XML før emailen sendes.</key>
+
+    <key alias="slackLegacyName">Slack (Legacy)</key>
+    <key alias="slackLegacyDescription">Sender formularens data til en specifik kanal på slack ved hjælp af legacy tokens</key>
+    <key alias="slackLegacyTokenLabel">API Token</key>
+    <key alias="slackLegacyTokenDescription">Slack API token.</key>
+    <key alias="slackLegacyChannelLabel">Kanal</key>
+    <key alias="slackLegacyChannelDescription">Slack-kanal der skal sendes til.</key>
+    <key alias="slackLegacyUsernameLabel">Brugernavn</key>
+    <key alias="slackLegacyUsernameDescription">Det brugernavn eller bot som er afsender.</key>
+    <key alias="slackLegacyAvatarUrlLabel">Avatar URL</key>
+    <key alias="slackLegacyAvatarUrlDescription">Den fulde URL (inklusiv http/https) til avatar-billedet.</key>
+
+    <key alias="slackName">Slack</key>
+    <key alias="slackDescription">Sender formularens data til en specifik kanal på slack ved hjælp af webhook.</key>
+    <key alias="slackWebhookUrlLabel">Webhook URL</key>
+    <key alias="slackWebhookUrlDescription">Slack Webhook URL.</key>
+  </area>
+
+  <area alias="formProviderDataSources">
+    <key alias="sQLDatabaseName">SQL Database</key>
+    <key alias="sQLDatabaseDescription">Forbind til hvilken som helst databasetabel der understøtter OLEDB og konstruer en datakilde på baggrund af den.</key>
+    <key alias="sQLDatabaseConnectionLabel">Forbindelsesstreng</key>
+    <key alias="sQLDatabaseConnectionDescription">OleDB kompatibel forbindelsesstreng.</key>
+    <key alias="sQLDatabaseTableLabel">Tabelnavn</key>
+    <key alias="sQLDatabaseTableDescription">Databasens tabelnavn.</key>
+  </area>
+
+  <area alias="formProviderPrevalueSources">
+    <key alias="dataSourceName">Datakilde</key>
+    <key alias="dataSourceDescription">Gemmer på foruddefinerede værdier i tabellen til foruddefinerede værdier.</key>
+
+    <key alias="getValuesFromTextfileName">Få værdier fra en tekstfil</key>
+    <key alias="getValuesFromTextfileDescription">Upload en tekstfil der indeholder foruddefinerede værdier.</key>
+    <key alias="getValuesFromTextfileTextFileLabel">Tekstfil</key>
+    <key alias="getValuesFromTextfileTextFileDescription">Fil der indeholder de foruddefinerede værdier (Opdelt ved linjeskift).</key>
+
+    <key alias="umbracoDocumentsName">Umbracodokumenter</key>
+    <key alias="umbracoDocumentsDescription">Bruger noder fra en specifik kilde som foruddefinerede værdier.</key>
+    <key alias="umbracoDocumentsRootNodeLabel">Rodnode</key>
+    <key alias="umbracoDocumentsRootNodeDescription">Kilde der hentes noder fra.</key>
+    <key alias="umbracoDocumentsUseCurrentPageLabel">Brug den nuværende side som rod</key>
+    <key alias="umbracoDocumentsUseCurrentPageDescription">Virker ikke i forhåndsvisning.</key>
+    <key alias="umbracoDocumentsDocTypeLabel">Dokumenttype</key>
+    <key alias="umbracoDocumentsDocTypeDescription">Typen af noder du vil bruge.</key>
+    <key alias="umbracoDocumentsListGrandChildrenLabel">Vis alle undersider</key>
+    <key alias="umbracoDocumentsListGrandChildrenDescription">Begræns ikke til underelementer, men inkludér yderligere niveauer.</key>
+    <key alias="umbracoDocumentsOrderByLabel">Sortér efter</key>
+    <key alias="umbracoDocumentsOrderByDescription">Vælg hvordan listen med foruddefinerede værdier skal sorteres.</key>
+
+    <key alias="sQLDatabaseName">SQL Database</key>
+    <key alias="sQLDatabaseDescription">Forbinder til en OLEDB-kompatibel databasetabel og skaber en kilde af foruddefinerede værdier derfra.</key>
+    <key alias="sQLDatabaseConnectionLabel">Forbindelsesstreng</key>
+    <key alias="sQLDatabaseConnectionDescription">OleDB kompatibel forbindelsesstreng.</key>
+    <key alias="sQLDatabaseConnectionStringLabel">Forbindelsesstreng fra web.config</key>
+    <key alias="sQLDatabaseConnectionStringDescription">Vælg forbindelsesstreng (den skal være OleDB-kompatibel).</key>
+    <key alias="sQLDatabaseTableLabel">Tabelnavn</key>
+    <key alias="sQLDatabaseTableDescription"></key>
+    <key alias="sQLDatabaseKeyColumnLabel">Nøgle-kolonne</key>
+    <key alias="sQLDatabaseKeyColumnDescription">Kolonne der indeholder nøglerne.</key>
+    <key alias="sQLDatabaseValueColumnLabel">Værdi-kolonne</key>
+    <key alias="sQLDatabaseValueColumnDescription">Kolonne der indeholder værdierne.</key>
+
+    <key alias="umbracoDataTypePreValueName">Umbraco datatype foruddefinerede værdier</key>
+    <key alias="umbracoDataTypePreValueDescription">Forbinder til en Umbraco datatype og dens samling af foruddefinerede værdier.</key>
+    <key alias="umbracoDataTypePreValuesDataTypeIdLabel">Datatype</key>
+    <key alias="umbracoDataTypePreValuesDataTypeIdDescription">Datatype der skal bruges.</key>
+  </area>
+
+  <area alias="formProviderExportTypes">
+    <key alias="excelFileName">Excel-fil</key>
+    <key alias="excelFileDescription">Eksporter alle data til Excel.</key>
+
+    <key alias="saveAllUploadedFilesInDiskStructureName">Gem alle uploadede filer (in disk structure)</key>
+    <key alias="saveAllUploadedFilesInDiskStructureDescription">Eksporterer alle filer uploaded via formular til et zip-arkiv, hvor filerne er organiseret som filerne er gemt på disken.</key>
+
+    <key alias="saveAllUploadedFilesByEntryName">Gem alle uploadede filer (efter besvarelse)</key>
+    <key alias="saveAllUploadedFilesByEntryDescription">Eksporterer alle filer uploaded via formular til et zip-arkiv, hvor filerne er organiseret per besvarelse i en undermappe.</key>
+  </area>
+
+  <area alias="formRecordSetActions">
+    <key alias="deleteConfirm">Er du sikker på at du vil slette disse besvarelser?</key>
+  </area>
+</language>

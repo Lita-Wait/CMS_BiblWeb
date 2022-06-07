@@ -1,0 +1,7 @@
+<div ng-controller="UmbracoForms.EditTypes.CheckboxListController as vm">
+  <label class="umb-forms-entry-edit-list-button" ng-repeat="preValue in detail.fieldPreValues">
+    <input type="checkbox" ng-checked="vm.isChecked(preValue)" ng-value="preValue" ng-click="vm.change(preValue)" /><span>{{preValue}}</span>
+  </label>
+  <div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>
+</div>
+

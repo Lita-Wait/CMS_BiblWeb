@@ -8,6 +8,7 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
       <PackageReference Include="umbraco.cms" Version="9.5.1" />
+      <PackageReference Include="Umbraco.Forms" Version="9.4.2" />
       <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) Or $(RuntimeIdentifier.StartsWith('win')) Or ('$(RuntimeIdentifier)' == '' And !$([MSBuild]::IsOSPlatform('osx')))" />
     </ItemGroup>
 

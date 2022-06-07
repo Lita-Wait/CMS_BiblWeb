@@ -1,0 +1,4 @@
+<div ng-controller="UmbracoForms.EditTypes.DateController as vm">
+  <input type="date" ng-model="vm.value" style="width: 400px" ng-change="vm.change()" ng-keydown="detail.validationMessages = []" />
+  <div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>
+</div>

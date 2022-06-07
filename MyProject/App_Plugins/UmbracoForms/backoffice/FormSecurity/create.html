@@ -1,0 +1,31 @@
+<div class="umb-pane" ng-controller="UmbracoForms.Editors.FormSecurity.CreateController as vm">
+  <div>
+
+    <h5><localize key="formSecurity_createTitle"></localize></h5>
+    <p>
+      <localize key="formSecurity_createUserRecordNote"></localize>
+    </p>
+
+    <p ng-show="vm.noUsersToChoose">
+      <em><localize key="formSecurity_allUsersHaveRecords"></localize></em>
+    </p>
+
+    <umb-control-group localize="label" label="@formSecurity_selectUser" ng-show="!vm.noUsersToChoose">
+      <select ng-model="vm.selectedUser" ng-options="user.name for user in vm.users"></select>
+    </umb-control-group>
+
+    <div class="btn-toolbar umb-btn-toolbar">
+      <div class="control-group umb-control-group">
+        <a href="" class="btn btn-link" ng-click="vm.cancelCreate()"><localize key="general_cancel">Cancel</localize></a>
+
+        <umb-button action="vm.navigateToCreate()"
+                    type="button"
+                    button-style="danger"
+                    state="vm.buttonState"
+                    label="OK"
+                    disabled="!vm.selectedUser">
+        </umb-button>
+      </div>
+    </div>
+  </div>
+</div>

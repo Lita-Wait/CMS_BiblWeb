@@ -5,9 +5,6 @@
 	Layout = "Master.cshtml";
 }
 
- 
-
-
 
 
  <nav class="navbar navbar-default navbar-static-top">
@@ -65,61 +62,47 @@
                     <div class="row aboutContent">
                         <div class="row aboutUsTexts m0 member">
                             <div class="fleft textsPart">
-                                <h2>О Библиотеке</h2>
-                                <p>Библиотека осуществляет информационную поддержку молодёжи в учебно-образовательном и самообразовательном процессе, оказывает профориентационные, психологические, образовательные услуги; организует просветительскую и культурно-досуговую работу. В библиотеке работают около 15 клубов и объединений по интересам. Профессиональный психолог ведет индивидуальные консультации по различным проблемам, волнующим молодых людей.</p>
-                                @*<p>Начальная стадия проведения исследования, суммируя приведенные примеры, искажает продуктовый ассортимент. Практика однозначно показывает, что размещение поразительно. </p>*@
+                                <h2>@Model.Value("headerTitle")</h2>
+                                <p>@Model.Value("headerText")</p>
                             </div>
                             <div class="fleft aboutImg">
-                                <img src="~/images/workers/about-us.jpg" alt="">
+                                <img src="@(Model.HeaderImage.MediaUrl())" alt="">
                             </div>
                         </div>
                         <div class="row m0 members">
+                        @{
+                            var workersImages = Model.WorkerImages.ToList();
+                            var workersNames = Model.WorkerNames.Split(';').ToList();
+                            var workersSpec = Model.WorkerSpec.Split(';').ToList();
+                        }
+                        @for (int i = 0; i < Model.WorkerImages.Count(); i++)
+                        {
                             <div class="col-sm-4 member3_1 member">
                                 <div class="row m0">
                                     <div class="row m0 memImg">
-                                        <img src="~/images/workers/mem1.png" alt="">
+                                        <img src="@(workersImages[i].MediaUrl())" alt="">
                                     </div>
                                     <div class="row m0 memberIntro">
-                                        <div class="row m0 name">Иван Иванов</div>
-                                        <div class="row m0 pro">специалист</div>
+                                        <div class="row m0 name">@(workersNames[i])</div>
+                                        <div class="row m0 pro">@(workersSpec[i])</div>
                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 member3_1 member">
-                                <div class="row m0">
-                                    <div class="row m0 memImg">
-                                        <img src="~/images/workers/mem2.png" alt="">
-                                    </div>
-                                    <div class="row m0 memberIntro">
-                                        <div class="row m0 name">Иван Иванов</div>
-                                        <div class="row m0 pro">специалист</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 member3_1 member">
-                                <div class="row m0">
-                                    <div class="row m0 memImg">
-                                        <img src="~/images/workers/mem3.png" alt="">
-                                    </div>
-                                    <div class="row m0 memberIntro">
-                                        <div class="row m0 name">Иван Иванов</div>
-                                        <div class="row m0 pro">специалист</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                        }
                         </div>
                     </div>
                     <div class="row partnersSlide">
                         <h2>Нормативные документы</h2>
                         <div class="owl-carousel partnerSlider">
-                            <div class="item"><h3>Устав библиотеки</h3><br/><a download href="~/docs/ustav.rtf"><img src="~/images/docs/doc1.png" alt=""></a></div>
-                            <div class="item"><h3>Свидетельство о государственной регистрации</h3><br/><a download href="~/docs/OGRN.pdf"><img src="~/images/docs/doc1.png" alt=""></a></div>
-                            <div class="item"><h3>Копия решения учредителя о создании организации культуры</h3><br/><a download href="~/docs/Kopija_reshenija_o_sozdanii_uchrezhdenija_kultury.pdf"><img src="~/images/docs/doc1.png" alt=""></a></div>
-                            <div class="item"><h3>Копия решения о назначении руководителя организации культуры</h3><br/><a download  href="~/docs/Kopija_reshenija_o_naznachenii_rukovoditelja_Baumshtein.jpg"><img src="~/images/docs/doc1.png" alt=""></a></div>
-                            <div class="item"><h3>Муниципальное задание на оказание услуг в 2021 году</h3><br/><a download href="~/docs/Munisipalnoe_zadanie_na_okazanie_uslug_v_2021_godu.pdf"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                        @{
+                            var docsTitles = Model.DocsTitles.Split(';').ToList();
+                            var docsLinks = Model.DocsLinks.Split(';').ToList();
+                        }
+                        @for (int i = 0; i < docsTitles.Count(); i++)
+                        {
+                            <div class="item"><h3>@(docsTitles[i])</h3><br/><a download href="@(docsLinks[i])"><img src="~/images/docs/doc1.png" alt=""></a></div>
+                        }         
                         </div>
                     </div>
                 </div>

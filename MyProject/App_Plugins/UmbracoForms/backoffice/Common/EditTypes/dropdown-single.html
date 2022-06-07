@@ -1,0 +1,5 @@
+<select
+        ng-model="detail.value"
+        ng-options="prevalue as prevalue for prevalue in detail.fieldPreValues">
+</select>
+<div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>

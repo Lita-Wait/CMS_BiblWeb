@@ -1,0 +1,8 @@
+<div ng-controller="UmbracoForms.EditTypes.DropDownMultipleController as vm">
+  <select ng-model="vm.value"
+          ng-options="prevalue as prevalue for prevalue in detail.fieldPreValues"
+          ng-change="vm.change()"
+          multiple>
+  </select>
+  <div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>
+</div>

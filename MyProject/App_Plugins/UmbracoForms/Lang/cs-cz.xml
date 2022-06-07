@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language>
+  <area alias="sections">
+    <key alias="forms">Formuláře</key>
+  </area>
+  <area alias="formsDashboard">
+    <key alias="yourForms">Vaše formuláře</key>
+    <key alias="showMore">Zobrazit více</key>
+    <key alias="entries">Záznamy</key>
+    <key alias="newVersion">Nová verze je k dispozici</key>
+    <key alias="installOverlayTitle">Gratulujeme</key>
+    <key alias="installOverlayDescription">Právě jste nainstalovali formulář - Pojďme společně vytvořit první formulář.</key>
+    <key alias="emptyOverlayTitle">Vytvoření formuláře</key>
+    <key alias="emptyOverlayDescription">Ještě nemáte nastavené žádné formuláře, navrhujeme si nyní vytvořit nějaké formuláře.</key>
+    <key alias="createAForm">Vytvořit formulář</key>
+    <key alias="newVersionTitle">K dispozici je nová verze</key>
+    <key alias="newVersionDescription">Nyní můžete nainstalovat aplikaci Umbraco Forms</key>
+    <key alias="upgradeNow">Aktualizovat nyní</key>
+    <key alias="downloading">Stažení a aktualizace formulářů...</key>
+    <key alias="invalidLicense">Neplatná licence</key>
+    <key alias="invalidLicenseValidFor">Vaše současná licence na Formuláře je platná pouze na:</key>
+    <key alias="reconfigure">Níže je uvedeno nové nastavení vaší licence.</key>
+    <key alias="trialTitle">Děkujeme, že jste vyzkoušeli Umbraco Forms</key>
+    <key alias="trialDescription">Chcete-li nadále používat aplikaci Umbraco Forms, musíte si zakoupit licenci nebo použít stávající licenci.</key>
+    <key alias="configureLicense">Konfigurace stávající licence</key>
+    <key alias="buyLicense">Koupit licenci</key>
+    <key alias="buyLicenseTitle">Zakoupení licence</key>
+    <key alias="buyLicenseCopy">
+      <![CDATA[
+        <p>
+          Zakoupení <strong>licence</strong>pro Umbraco Forms zabere jen několik minut <strong>a licence vám bude okamžitě doručena</strong>.
+        </p>
+        <p>
+          Postup je následující:
+          <ol>
+            <li>Klikněte níže na tlačítko koupit</li>
+            <li>Zaplatit kreditní kartou (nebo fakturou)</li>
+            <li>Nastavte licenci uvnitř Umbraco Forms a můžete začít pracovat.</li>
+          </ol>
+        </p>
+      ]]>
+    </key>
+    <key alias="buyLink">Koupit Umbraco Forms</key>
+    <key alias="buyLicenseFAQs">
+      <![CDATA[
+        <h4>FAQ:</h4>
+        <h5>Kolik stojí?</h5>
+        <p>Cena začíná na 209 a jedná se o jednorázový poplatek (bez předplatného).</p>
+        <h5>Co všechno licence zahrnuje?</h5>
+        <p>Licence pokrývá jednu doménu a bude fungovat i na všech subdoménách. Součástí jsou i dvě další vývojové domény.</p>
+        <h5>Mohu k licenci přidat další domény?</h5>
+        <p>Ano, přidání dalších domén je možné. Další domény k licenci můžete zakoupit ve svém účtu na webu Umbraco.com.</p>
+        <h5>Další otázky?</h5>
+        <p>
+           Nebojte se, <a class="green-link" href="https://our.umbraco.com/Documentation/Add-ons/The-Licensing-model/index-v7?utm_source=core&utm_medium=dashboard&utm_content=buy-faq-link&utm_campaign=formslicensing">, v dokumentaci najdete další podrobnosti</a> a také nás můžete <a class="green-link" href="https://umbraco.com/contact-us?utm_source=core&utm_medium=dashboard&utm_content=contact-us-link&utm_campaign=formslicensing">kontaktovat</a>. Obvykle odpovídáme do několika hodin.
+
+        </p>
+      ]]>
+    </key>
+    <key alias="configureLicenseTitle">Nastavení licence Umbraco Forms</key>
+    <key alias="configureLicenseCopy">
+      Pokud jste si již zakoupili aplikaci Umbraco Forms, můžete zde automaticky načíst a nakonfigurovat svou licenci. Jednoduše níže zadejte své přihlašovací údaje z umbraco.com a my vaši licenci dohledáme.
+    </key>
+    <key alias="configureLicenseFAQs">
+      <![CDATA[
+        <h4>FAQ:</h4>
+        <h5>Zapomněl jsem své přihlašovací údaje?</h5>
+        <p>
+         Jedná se o kombinaci vašeho e-mailu a hesla, která jste použili při objednávce.Heslo <a class="green-link" href="https://shop.umbraco.com/profile/retrieve-your-password/">si můžete kdykoli obnovit zde</a>.
+        </p>
+        <h5>Jak si mohu koupit licenci?</h5>
+        <p>
+         Pokud licenci nemáte, můžete <a class="btn-link green-link" ng-click="vm.status.state = 'buy'">Proces zabere jen několik minut</a>.
+
+        </p>
+      ]]>
+    </key>
+    <key alias="findLicenses">Vyhledat licence</key>
+    <key alias="invalidEmail">Neplatný e-mail nebo heslo</key>
+    <key alias="noLicensesAvailable">Na tomto účtu nejsou k dispozici žádné licence Umbraco Forms</key>
+    <key alias="availableLicensesTitle">Dostupné licence</key>
+    <key alias="foundLicenses">Nalezeno</key>
+    <key alias="foundLicensesAccount">na účtu</key>
+    <key alias="noDomainsAssigned">Nemá přiřazeny žádné domény</key>
+    <key alias="setDomain">Nastavte prosím doménu u této licence</key>
+    <key alias="configureAndInstall">Konfigurace a instalace</key>
+    <key alias="installLicense">Nainstalovat tuto licenci</key>
+    <key alias="validDomains">Platné domény</key>
+    <key alias="licenseValidOnDomain">Tato licence je platná na stávající doméně</key>
+    <key alias="licenseNotValidOnDomain">Tato licence není platná na stávající doméně</key>
+    <key alias="plainTextPasswordWarning">
+      <![CDATA[
+        <h3 class="warning">Upozornění: Nastaveno na ukládání prostých textových hesel!</h3>
+        <p>Pokud v některém z formulářů použijete pole s heslem, budou údaje, které návštěvníci do tohoto pole zadají, uloženy jako prostý text. Jde o bezpečnostní problém a měli byste se mu raději vyhnout.</p>
+        <p>Chcete-li tento problém vyřešit, můžete přejít do souboru <span class="code">~/App_Plugins/UmbracoForms/UmbracoForms.config</span> a nastavit klíč  <span class="code">SavePlainTextPasswords</span>sur<span class="code"></span>.</p>
+        <p>Aby se nové nastavení aktivovalo, tak po aktualizaci této volby nastavení nezapomeňte recyklovat webový fond aplikací. </p>
+        <p>Poznámka: Hodnoty hesel budou stále předávány pracovním postupům bez ohledu na nastavení v<span class="code">UmbracoForms.config</span></p>
+      ]]>
+    </key>
+    <key alias="currentVersion">Aktuální nainstalovaná verze aplikace Umbraco Forms:</key>
+    <key alias="licenseConfiguredNotificationTitle">Licence nakonfigurována</key>
+    <key alias="licenseConfiguredNotificationMessage">Aplikace Umbraco Forms byla nakonfigurována pro použití na tomto webu.</key>
+    <key alias="insufficientPermissionsError">Nedostatečná oprávnění</key>
+    <key alias="insufficientPermissionsMessage">Nemáte oprávnění k vytváření a správě formulářů.</key>
+    <key alias="insufficientPermissionsUpgradeMessage">Pouze uživatelé s oprávněním správce mají možnost aktualizovat aplikaci Umbraco Forms.</key>
+    <key alias="licensedDomains">Licencované domény</key>
+  </area>
+  <area alias="formCopy">
+    <key alias="title">Kopírování formuláře '%0%'</key>
+    <key alias="enterName">Zadejte název kopírovaného formuláře</key>
+    <key alias="alsoCopyWorkflows">Kopírovat také pracovní postupy?</key>
+    <key alias="copyToNewFolder">Kopírovat do nové složky?</key>
+    <key alias="selectLocation">Vybrat umístění pro kopírovaný formulář</key>
+  </area>
+  <area alias="formCreate">
+    <key alias="title">Vytvořit nový formulář nebo složku</key>
+    <key alias="emptyForm">Prázdný formulář</key>
+    <key alias="emptyFormDescription">Začínáme od začátku</key>
+    <key alias="folder">Složka</key>
+    <key alias="folderDescription">Použito k organizaci formulářů</key>
+    <key alias="enterFolderName">Zadat název složky</key>
+  </area>
+  <area alias="formExport">
+    <key alias="formExportedSuccess">Formulář byl exportován do souboru.</key>
+    <key alias="formExportedSuccess">Při ukládání formuláře do souboru došlo k chybě.</key>
+  </area>
+  <area alias="formImport">
+    <key alias="importInstruction1">
+      Chcete-li importovat formulář, najděte exportovaný soubor .json ve svém počítači kliknutím na tlačítko 'Importovat' (na další obrazovce budete požádáni o potvrzení).
+    </key>
+    <key alias="importInstruction2">
+      Pokud již existuje formulář s vybraným ID souboru, bude aktualizován a přesunut do vybraného umístění.
+      Pokud není nalezen žádný existující formulář, bude na vybraném místě vytvořen nový.
+    </key>
+  </area>
+  <area alias="formPermissions">
+    <key alias="accessDeniedTitle">Přístup odepřen</key>
+  </area>
+  <area alias="formMessages">
+    <key alias="saveErrorMessage">Prosím, zkontrolujte, zda jsou vaše nastavení platná.</key>
+  </area>
+  <area alias="formEdit">
+    <key alias="addQuestion">Přidat otázku</key>
+    <key alias="groupIsEmpty">Skupina je prázdná</key>
+    <key alias="dropQuestionHere">Sem zadejte otázku…</key>
+    <key alias="letGo">Jéj… pojďme</key>
+    <key alias="pageIsEmpty">Stránka je prázdná</key>
+    <key alias="dropGroupHere">Vložte skupinu sem...</key>
+    <key alias="addGroup">Přidat novou skupinu</key>
+    <key alias="addPage">Přidat novou stránku</key>
+    <key alias="pageTitlePlaceholder">Stránka bez názvu (nepovinné)</key>
+    <key alias="groupTitlePlaceholder">Skupina bez názvu (nepovinné)</key>
+    <key alias="saveFieldFailedTitle">Pole se nepodařilo uložit</key>
+    <key alias="accessDeniedMessage">Nemáte přístup potřebný pro provedení úprav tohoto formuláře.</key>
+    <key alias="formSaved">Formulář uložen</key>
+    <key alias="unableToLoadForm">Nelze načíst formulář</key>
+    <key alias="helpText">Text nápovědy</key>
+    <key alias="editPage">Upravit stránku</key>
+    <key alias="editGroup">Upravit skupinu</key>
+    <key alias="addQuestion">Přidat otázku</key>
+    <key alias="editQuestion">Upravit otázku</key>
+    <key alias="workflows">Pracovní postupy</key>
+  </area>
+  <area alias="formFileUpload">
+    <key alias="allowAllFiles">Povolit všechny soubory</key>
+    <key alias="allowOnlySpecifiedFiles">Povolit pouze určené soubory</key>
+    <key alias="predefinedAllowedFileTypes">Předdefinované povolené typy souborů</key>
+    <key alias="userDefinedAllowedFileTypes">Uživatelsky definované povolené typy souborů</key>
+    <key alias="deleteAllowedFileTypeConfirmationTitle">Potvrzení</key>
+    <key alias="deleteAllowedFileTypeConfirmationDescription">Opravdu chcete tento soubor odstranit?</key>
+    <key alias="duplicateFileTypeErrorTitle">Chyba typu souboru</key>
+    <key alias="duplicateFileTypeErrorMessage">Nelze přidat typ souboru. Jedná se o duplicitní položku.</key>
+    <key alias="pickFile">Vybrat soubor</key>
+    <key alias="uploading">Nahrávání...</key>
+    <key alias="currentFile">Aktuální soubor</key>
+  </area>
+  <area alias="formPrevalues">
+    <key alias="addNewItem">Sem přidejte novou položku</key>
+    <key alias="duplicateErrorTitle">Chyba předvyplnění</key>
+    <key alias="duplicateAddErrorMessage">Nelze přidat hodnotu, protože by se vytvořila duplicitní položka.</key>
+    <key alias="duplicateEditErrorMessage">Nelze upravit hodnotu, protože by se vytvořila duplicitní položka.</key>
+  </area>
+  <area alias="formDelete">
+    <key alias="title">Jste si jisti, že chcete odstranit %0% '%1%'?</key>
+    <key alias="timingNote">Upozorňujeme, že tento proces může trvat dlouho. Délka procesu závisí na počtu záznamů.</key>
+    <key alias="recordDeleteNote">Smazáním formuláře se vymažou i související záznamy.</key>
+    <key alias="recordDetail">Existuje %0% záznamů, přičemž nejnovější byl odeslán dne %1%.</key>
+    <key alias="cannotDeleteFolder">Vybranou složku nelze odstranit, protože není prázdná.</key>
+    <key alias="successMessageForForm">Formulář byl úspěšně odstraněn.</key>
+    <key alias="failedMessageForForm">Formulář se nepodařilo odstranit.</key>
+    <key alias="successMessageForFolder">Složka byla úspěšně odstraněna.</key>
+    <key alias="failedMessageForFolder">Složku se nepodařilo odstranit.</key>
+  </area>
+  <area alias="formEntries">
+    <key alias="title">%0% Záznamy</key>
+    <key alias="filterEntries">Filtrování položek...</key>
+    <key alias="selectedRowsDescription">%0% z %1% vybraných </key>
+    <key alias="export">Exportovat</key>
+    <key alias="chooseExportFormat">Zvolte formát, do kterého chcete exportovat záznamy formuláře</key>
+    <key alias="entriesNotStored">V současné době se podání neukládají v databázi.</key>
+    <key alias="enableStoreEntries">Chcete-li tuto funkci povolit, přejděte do nastavení formuláře a aktivujte funkci "Ukládat záznamy".</key>
+    <key alias="noEntriesInRange">Ve zvoleném rozsahu datumů nebyla přidána žádná podání.</key>
+    <key alias="noEntriesInRangeDetail">Nepodařilo se nám najít žádné záznamy o podání. Jste si jisti, že jste formulář podali? Případně zkuste prodloužit časové období.</key>
+    <key alias="noEntriesMatchingSearch">Nepodařilo se nám najít žádná podání odpovídající vašemu vyhledávání.</key>
+    <key alias="noEntriesMatchingSearchDetail">Zkuste hledat něco jiného, třeba budete mít příště víc štěstí.</key>
+    <key alias="selectedEntryPaging">Záznam  %0% z %1%</key>
+    <key alias="previousEntry">Předchozí záznam</key>
+    <key alias="nextEntry">Následující záznam</key>
+    <key alias="accessDeniedMessage">Nemáte přístup k zobrazení záznamů tohoto formuláře</key>
+    <key alias="executeCompleteTitle">Provedeno</key>
+    <key alias="executeSuccessMessage">Úspěšně provedená akce %0%</key>
+    <key alias="executeErrorMessage">Akci se nepodařilo  %0% provést z důvodu chyby: %1%.</key>
+    <key alias="entryDetails">Podrobnosti o záznamu</key>
+    <key alias="closeDetails">Údaje o zavření</key>
+    <key alias="submittedOn">Podáno dne</key>
+    <key alias="updatedOn">Aktualizováno dne</key>
+    <key alias="fromPage">Ze stránky</key>
+    <key alias="member">Člen</key>
+    <key alias="state">Stát</key>
+    <key alias="uniqueId">Unikátní ID</key>
+    <key alias="auditTrail">Auditní stopa</key>
+    <key alias="showAuditTrail">Zobrazit auditní záznam</key>
+    <key alias="hideAuditTrail">Skrýt auditní stopu</key>
+    <key alias="updatedBy">Aktualizováno uživatelem</key>
+    <key alias="updateRecordSuccess">Záznam aktualizován</key>
+    <key alias="updateRecordError">Záznam se nepodařilo aktualizovat</key>
+  </area>
+  <area alias="formMove">
+    <key alias="title"><![CDATA[Vyberte složku z větvené struktury, <strong>%0%</strong> do které ho chcete přesunout.]]></key>
+    <key alias="successMessage"><![CDATA[<strong>%0%</strong> byl přesunut pod <strong>%1%</strong>.]]></key>
+    <key alias="successNotificationHeader">Přesunuto</key>
+    <key alias="successNotificationDescriptionForForm">Formulář byl přesunut do vybraného umístění.</key>
+    <key alias="successNotificationDescriptionForFolder">Složka byla přesunuta do vybraného umístění.</key>
+  </area>
+  <area alias="formRename">
+    <key alias="enterNewName">Zadat nový název</key>
+    <key alias="successNotificationHeader">Přejmenováno</key>
+    <key alias="successNotificationDescriptionForFolder">Složka byla přejmenována.</key>
+  </area>
+  <area alias="formConditions">
+    <key alias="title">Podmínky</key>
+    <key alias="enableConditions">Povolit podmínky</key>
+    <key alias="actionTypeShow">Zobrazit</key>
+    <key alias="actionTypeHide">Skrýt</key>
+    <key alias="logicTypeAll">vše</key>
+    <key alias="logicTypeAny">jakýkoli</key>
+    <key alias="operatorIs">je</key>
+    <key alias="operatorIsNot">není</key>
+    <key alias="operatorGreaterThen">je větší než</key>
+    <key alias="operatorLessThen">je menší než</key>
+    <key alias="operatorContains">obsahuje</key>
+    <key alias="operatorStartsWith">začíná na</key>
+    <key alias="operatorEndsWith">končí na</key>
+    <key alias="thisFieldSetIf">tato pole za podmínky</key>
+    <key alias="ofTheFollowingMatch">z následujících shod</key>
+    <key alias="selectField">Vybrat pole</key>
+    <key alias="addCondition">Přidat podmínku</key>
+    <key alias="pageConditionsDescription">Volitelně definujte podmínky pro zobrazení tlačítka "Odeslat" nebo "Další" pro danou stránku.</key>
+    <key alias="pageButtonConditionStatus">
+      <![CDATA[ %0% tlačítka pro tuto stránku, pokud  <strong>%1%</strong> tato skupina, pokud se shoduje s následujícími údaji:]]>
+    </key>
+    <key alias="fieldsetConditionStatus">
+      <![CDATA[ %0% tato skupina, <strong>%1%</strong> pokud se shoduje některá z následujících:]]>
+    </key>
+    <key alias="fieldConditionStatus">
+      <![CDATA[ %0% tato otázka pokud <strong>%1%</strong> se shoduje některá z následujících:]]>
+    </key>
+  </area>
+  <area alias="formThemes">
+    <key alias="noThemesAvailable">Přidejte motiv do /views/partials/forms/themes</key>
+  </area>
+  <area alias="formWorkflows">
+    <key alias="workflowNameLabel">Název pracovního postupu</key>
+    <key alias="workflowNameDescription">Uveďte popisný název pracovního postupu.</key>
+    <key alias="activeLabel">Aktivní</key>
+    <key alias="activeDescription">Povolte nebo zakažte pracovní postup</key>
+    <key alias="includeSensitiveDataLabel">Zahrnout citlivé údaje</key>
+    <key alias="includeSensitiveDataDescription">Zahrnout citlivé údaje při provádění tohoto pracovního postupu?</key>
+    <key alias="submitMessage">Odeslat zprávu / Přejít na stránku</key>
+    <key alias="approve">Schválit</key>
+    <key alias="automatic">Automatické nastavení</key>
+    <key alias="noWorkflowsAdded">Nejsou přidány žádné pracovní postupy</key>
+    <key alias="configureWorkflow">nastavit pracovní postup</key>
+    <key alias="saveFailedTitle">Pracovní postup se nepodařilo uložit </key>
+    <key alias="closeConfirmationTitle">Potvrzení</key>
+    <key alias="closeConfirmationMessage">Byly provedeny změny, které nebyly uloženy. Opravdu si přejete soubor zavřít?</key>
+    <key alias="chooseWorkflow">Vybrat pracovní postup</key>
+    <key alias="on">Na</key>
+    <key alias="onSubmit">Na Odeslat</key>
+    <key alias="onSubmitDescription">Po odeslání formuláře za vás provedeme tyto pracovní postupy</key>
+    <key alias="onApprove">Na schválení</key>
+    <key alias="onApproveDescription">Tyto pracovní postupy se spustí po schválení záznamu</key>
+    <key alias="onApproveAutomaticDescription">K tomu dojde automaticky po odeslání s aktuálním nastavením formuláře.</key>
+    <key alias="defaultWorkflowName">Odeslat zprávu / Přejít na stránku</key>
+    <key alias="defaultWorkflowDescription">Zobrazení zprávy po odeslání formuláře nebo přechod na stránku Umbraco.</key>
+    <key alias="addWorkflow">Přidat pracovní postup</key>
+    <key alias="messageOnSubmit">Zpráva při odeslání</key>
+    <key alias="messageOnSubmitDescription">Zobrazit zprávu při odeslání formuláře</key>
+    <key alias="goToPage">Přejít na stránku</key>
+    <key alias="goToPageDescription">Po odeslání formuláře přejít na stránku Umbraco</key>
+  </area>
+  <area alias="fieldSetColumns">
+    <key alias="title">Sloupce</key>
+    <key alias="setNumber">Nastavte, kolik sloupců chcete mít ve skupině.</key>
+    <key alias="columnNumberDescription">Tato skupina má aktuálně %0%.</key>
+    <key alias="addColumn">Přidat sloupec</key>
+  </area>
+  <area alias="fieldSettings">
+    <key alias="namePlaceholder">Zadat otázku…</key>
+    <key alias="descriptionPlaceholder">Zadat text nápovědy</key>
+    <key alias="requiredLabel">Požadovaný štítek</key>
+    <key alias="chooseAnswerType">Zvolit typ odpovědi</key>
+    <key alias="sensitiveData">Citlivé údaje</key>
+    <key alias="sensitiveDataDescription">Zabraňte zobrazení a exportu dat, pokud uživatel nemá dostatečná oprávnění.</key>
+    <key alias="sensitiveDataLabel">Ano, v tomto poli se ukládají citlivé údaje</key>
+    <key alias="allowedFileUploadTypes">Povolené typy nahrávání souborů</key>
+    <key alias="prevalues">Předepsané hodnoty</key>
+    <key alias="prevaluesProvideWithSources">Buď zde uveďte seznam možností (předepsaných hodnot) specifických pro toto pole, nebo vyberte předdefinovaný zdroj předepsaných hodnot.</key>
+    <key alias="prevaluesProvide">Poskytne seznam možností (předepsaných hodnot) pro toto pole.</key>
+    <key alias="prevaluesItems">Položky</key>
+    <key alias="prevaluesSource">Zdroj předepsaných hodnot</key>
+    <key alias="pressEnterToAdd">Pro přidání hodnoty stiskněte enter</key>
+    <key alias="settings">Nastavení</key>
+    <key alias="mandatory">Povinné</key>
+    <key alias="enterRegex">Zadat regulární výraz</key>
+    <key alias="invalidPlaceholder">Zadat zprávu o neplatnosti pole...</key>
+    <key alias="allowMultipleFileUploads">Povolit nahrávání více souborů</key>
+    <key alias="multipleFilesToggleTextOn">Povoleno odesílání více souborů</key>
+    <key alias="multipleFilesToggleTextOff">Pouze jeden soubor</key>
+  </area>
+  <area alias="formSettings">
+    <key alias="storeRecords">Uložit záznamy</key>
+    <key alias="storeRecordsDescription">
+      Pokud chcete uložit odeslané záznamy do databáze, zaškrtněte toto políčko.
+      To umožní jejich zobrazení a export z přehledu dotazů.
+      Pokud nechcete data ukládat (např. kvůli pravidlům ve Vaší společnosti), nechte toto políčko nezaškrtnuté.
+    </key>
+    <key alias="storeRecordsConfirm">Ano, nechte předložené záznamy uložené v databázi, abyste si je mohli později prohlédnout a exportovat.</key>
+    <key alias="captions">Titulky</key>
+    <key alias="captionsDescription">Změnit popisky tlačítek Odeslat, Další a Předchozí</key>
+    <key alias="captionSubmitButton">Popisek tlačítka "Odeslat"</key>
+    <key alias="captionNextButton">Popisek tlačítka "Další"</key>
+    <key alias="captionPreviousButton">Popisek tlačítka "Předchozí"</key>
+    <key alias="styling">Styl</key>
+    <key alias="stylingDescription">Přidejte jednu nebo více tříd formuláře, abyste umožnili vlastní stylování, odstranili výchozí styl a načítali prostředky pomocí funkce Závislost klienta.</key>
+    <key alias="formCssClass">Třída CSS formuláře</key>
+    <key alias="disableDefaultStylesheet">Zakázat výchozí styl</key>
+    <key alias="loadWithClientDependency">Načtení prostředků pomocí funkce Závislost klienta</key>
+    <key alias="validation">Validace</key>
+    <key alias="validationDescription">Zajistěte lepší validační zprávy, skryjte validační štítky a změňte nebo zakažte značku povinné/povinné.</key>
+    <key alias="mandatoryErrorMessage">Povinná chybová zpráva</key>
+    <key alias="mandatoryErrorMessageDescription">Zpráva, která se zobrazí, pokud povinné pole zůstalo prázdné.</key>
+    <key alias="invalidErrorMessage">Chybová zpráva neplatné</key>
+    <key alias="invalidErrorMessageDescription">Zpráva, která se zobrazí, když je pole neplatné</key>
+    <key alias="showValidationSummary">Zobrazit shrnutí validace</key>
+    <key alias="hideFieldValidationLabels">Skrýt popisky validačního pole</key>
+    <key alias="markFields">Označit pole</key>
+    <key alias="markFieldsNoIndicator">Žádný indikátor</key>
+    <key alias="markMandatoryFields">Označit povinná pole </key>
+    <key alias="markOptionalFields">Označit nepovinná pole</key>
+    <key alias="indicator">Indikátor</key>
+    <key alias="changeIndicatorSymbol">Změňte symbol povinného indikátoru</key>
+    <key alias="autocomplete">Automatické dokončování</key>
+    <key alias="autocompleteDescription">Přidání atributu pro správu celkového chování formuláře při automatickém dokončování.</key>
+    <key alias="autocompleteNone">Žádné</key>
+    <key alias="autocompleteOn">Zapnuto</key>
+    <key alias="autocompleteOff">Vypnuto</key>
+    <key alias="moderation">Moderace</key>
+    <key alias="moderationDescription">Povolit moderaci odesílání formulářů. Většina případů použití se týká veřejně zobrazovaných příspěvků, jako jsou komentáře k příspěvkům na blogu nebo příspěvky pro kampaně na sociálních sítích.</key>
+    <key alias="enablePostModeration">Povolit moderování příspěvků</key>
+    <key alias="deleteTitle">Delete user security: %0%</key>
+    <key alias="deleteUserRecordNote">Smazáním uživatelského bezpečnostního záznamu budou uživatelská oprávnění odvozena od skupin uživatelů, kterých jsou členy.</key>
+    <key alias="deleteSuccessMessage">Záznam zabezpečení uživatele byl smazán.</key>
+    <key alias="deleteFailedMessage">Záznam zabezpečení uživatele nelze smazat.</key>
+  </area>
+  <area alias="formSecurity">
+    <key alias="saveSuccessTitle">Uživatelský formulář bezpečně uložen</key>
+    <key alias="saveErrorTitle">Uživatelský formulář se nepodařilo bezpečně uložit</key>
+    <key alias="manageFormsLabel">Správa formulářů</key>
+    <key alias="manageFormsDescription">Udělení nebo odepření přístupu ke správě formulářů</key>
+    <key alias="manageWorkflowsLabel">Správa pracovních postupů</key>
+    <key alias="manageWorkflowsDescription">Udělit nebo zakázat přístup ke správě všech položek pracovních postupů formulářů</key>
+    <key alias="manageDatasourcesLabel">Spravovat zdroje dat</key>
+    <key alias="manageDatasourcesDescription">Povolit nebo zakázat přístup ke správě všech zdrojů dat pro všechny formuláře.</key>
+    <key alias="managePrevalueSourcesLabel">Spravovat zdroje předvyplněných hodnot</key>
+    <key alias="managePrevalueSourcesDescription">Udělit nebo zakázat přístup ke správě jakýchkoli zdrojů předvyplněných hodnot pro všechny formuláře</key>
+    <key alias="manageIndividualFormsLabel">Zabezpečení formuláře</key>
+    <key alias="manageIndividualFormsDescription">Povolit nebo zakázat přístup k jednotlivým formulářům</key>
+    <key alias="startFolders">Spustit složky</key>
+    <key alias="startFoldersDescription">Definujte kořenovou složku nebo složky pro uživatele</key>
+    <key alias="selectNewStartFolders">Vyberte možnost počáteční složky</key>
+    <key alias="formName">Název formuláře</key>
+    <key alias="hasAccess">Má přístup</key>
+    <key alias="viewEntriesLabel">Zobrazit položky</key>
+    <key alias="viewEntriesDescription">Povolit nebo zakázat přístup k prohlížení odeslaných příspěvků</key>
+    <key alias="editEntriesLabel">Upravit záznamy</key>
+    <key alias="editEntriesDescription">Povolit nebo zakázat přístup k úpravám odeslaných záznamů</key>
+    <key alias="createTitle">Vytvořte zabezpečení uživatele</key>
+    <key alias="createUserRecordNote">Když je vytvořen uživatelský záznam, bude mít přednost před všemi oprávněními přidělenými na úrovni skupiny uživatelů.</key>
+    <key alias="selectUser">Vyberte uživatele</key>
+    <key alias="allUsersHaveRecords">Všichni uživatelé již mají vytvořené bezpečnostní záznamy.</key>
+    <key alias="groupPermissions">Oprávnění skupiny</key>
+    <key alias="userPermissions">Uživatelská oprávnění</key>
+  </area>
+  <area alias="formDataSources">
+    <key alias="typeDescription">Vyberte typ zdroje dat</key>
+    <key alias="createForm">Vytvořit formulář</key>
+    <key alias="formName">Název formuláře</key>
+    <key alias="selectFields">Vybrat pole</key>
+    <key alias="selectFieldsDescription">Pole ze zdroje dat, která chcete zahrnout do formuláře.</key>
+    <key alias="setupForeignKeys">Nastavení cizích klíčů</key>
+    <key alias="setupForeignKeysDescription">Vyberte hodnotu sloupce pro pole cizího klíče</key>
+    <key alias="selectType">Vybrat typ</key>
+    <key alias="selectTypeDescription">Typ pole, který chcete použít pro zahrnutá pole (nebo výchozí hodnota).</key>
+    <key alias="defaultValue">Výchozí hodnota</key>
+    <key alias="deleteConfirm">Jste si jisti, že chcete odstranit zdroj dat %0%?</key>
+    <key alias="saveSuccessTitle">Uložen zdroj dat</key>
+    <key alias="saveErrorTitle">Zdroj dat se nepodařilo uložit</key>
+    <key alias="accessDeniedMessage">Nemáte přístup k úpravám zdrojů dat</key>
+  </area>
+  <area alias="formPrevalueSources">
+    <key alias="typeDescription">Vyberte typ převažujícího zdroje dat</key>
+    <key alias="deleteConfirm">Jste si jisti, že chcete odstranit zdroj dat předběžných hodnot %0%?</key>
+    <key alias="saveSuccessTitle">Zdroj předběžných hodnot uložen</key>
+    <key alias="saveErrorTitle">Zdroj předběžných hodnot se nepodařilo uložit</key>
+    <key alias="accessDeniedMessage">Nemáte přístup k úpravám zdrojů předběžných hodnot</key>
+  </area>
+
+  <area alias="formProviderFieldTypes">
+    <key alias="checkboxName">Zaškrtávací políčko</key>
+    <key alias="checkboxDescription">Vykreslí zaškrtávací políčko.</key>
+    <key alias="checkboxDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="checkboxDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+
+    <key alias="multipleChoiceName">Multiple choice</key>
+    <key alias="multipleChoiceDescription">Vykreslí sadu zaškrtávacích políček, aby šlo vybrat více odpovědí.</key>
+    <key alias="multipleChoiceDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="multipleChoiceDefaultValueDescription">Zadat výchozí hodnotu.</key>
+    <key alias="multipleChoiceShowLabelLabel">Zobrazit popisek</key>
+    <key alias="multipleChoiceShowLabelDescription">Určete, zda se má při vykreslování formuláře zobrazit popisek pole.</key>
+
+    <key alias="dataConsentName">Souhlas s nakládání s údaji</key>
+    <key alias="dataConsentDescription">Vykreslí pole, kde požádá o souhlas s údaji.</key>
+    <key alias="dataConsentAcceptCopyLabel">Přijmout kopii</key>
+    <key alias="dataConsentAcceptCopyDescription">Text použitý k potvrzení souhlasu.</key>
+
+    <key alias="dateName">Datum</key>
+    <key alias="dateDescription">Vykreslí pole pro výběr data.</key>
+    <key alias="datePlaceholderLabel">Zástupná hodnota</key>
+    <key alias="datePlaceholderDescription">Zadejte zástupnou hodnotu.</key>
+
+    <key alias="dropdownName">Rozbalovací seznam</key>
+    <key alias="dropdownDescription">Vykreslí seznam hodnot v rozbalovacím seznamu.</key>
+    <key alias="dropdownDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="dropdownDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+    <key alias="dropdownAllowMultipleSelectionsLabel">Povolit více možností</key>
+    <key alias="dropdownAllowMultipleSelectionsDescription">Určete, zda povolit vícenásobný výběr ze seznamu.</key>
+    <key alias="dropdownShowLabelLabel">Zobrazit popisek</key>
+    <key alias="dropdownShowLabelDescription">Určete, zda se má při vykreslování formuláře zobrazit popisek pole.</key>
+    <key alias="dropdownAutocompleteAttributeLabel">Atribut automatického doplňování</key>
+    <key alias="dropdownAutocompleteAttributeDescription">Volitelně zadejte hodnotu atributu automatického dokončování.</key>
+
+    <key alias="fileUploadName">Nahrátí souborů</key>
+    <key alias="fileUploadDescription">Vykreslí pole pro odesílání souborů, které slouží k odesílání souborů.</key>
+
+    <key alias="hiddenName">Skryté</key>
+    <key alias="hiddenDescription">Vykreslí skryté pole.</key>
+    <key alias="hiddenDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="hiddenDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+
+    <key alias="passwordName">Heslo</key>
+    <key alias="passwordDescription">Vykreslí pole s heslem.</key>
+    <key alias="passwordPlaceholderLabel">Zástupná hodnota</key>
+    <key alias="passwordPlaceholderDescription">Zadejte zástupnou hodnotu.</key>
+
+    <key alias="singleChoiceName">Jedna volba</key>
+    <key alias="singleChoiceDescription">Vykreslí seznam umožňující výběr jedné z odpovědí.</key>
+    <key alias="singleChoiceDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="singleChoiceDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+    <key alias="singleChoiceShowLabelLabel">Zobrazit popisek</key>
+    <key alias="singleChoiceShowLabelDescription">Indikuje, zda se při vykreslování formuláře zobrazí popisek pole.</key>
+
+    <key alias="recaptcha2Name">reCAPTCHA</key>
+    <key alias="recaptcha2Description">Google reCAPTCHA v2.</key>
+    <key alias="recaptcha2ThemeLabel">Motiv</key>
+    <key alias="recaptcha2ThemeDescription">Motiv reCAPTCHA v2.</key>
+    <key alias="recaptcha2SizeLabel">Velikost</key>
+    <key alias="recaptcha2SizeDescription">Velikost reCAPTCHA v2.</key>
+    <key alias="recaptcha2ErrorMessageLabel">Chybová zpráva</key>
+    <key alias="recaptcha2ErrorMessageDescription">Chybová zpráva, která se zobrazí, když uživatel neprojde kontrolou reCAPTCHA.</key>
+
+    <key alias="reCAPTCHAV3WithScoreName">reCAPTCHA v3 se skóre</key>
+    <key alias="reCAPTCHAV3WithScoreDescription">Google reCAPTCHA v3 s limitní hodnotou skóre</key>
+    <key alias="reCAPTCHAV3WithScoreScoreThresholdLabel">Prahová hodnota skóre</key>
+    <key alias="reCAPTCHAV3WithScoreScoreThresholdDescription">Skóre stanovené pro reCAPTCHA v3 je v rozmezí 0 až 1. Při těchto hodnotách jsou odeslané formuláře akceptovány. Vyšší hodnota zachytí více spamů, ale také zvýší riziko odmítnutí platných zadání. Pro většinu webů je vhodnou volbou hodnota 0,5..</key>
+    <key alias="reCAPTCHAV3WithScoreScoreErrorMessageLabel">Chybová zpráva</key>
+    <key alias="reCAPTCHAV3WithScoreScoreErrorMessageDescription">Chybová zpráva, která se zobrazí, když uživatel neprojde kontrolou reCAPTCHA.</key>
+    <key alias="reCAPTCHAV3WithScoreScoreSaveScoreLabel">Uložit skóre</key>
+    <key alias="reCAPTCHAV3WithScoreScoreSaveScoreDescription">Uložte vypočítané skóre s odesláním formuláře.</key>
+
+    <key alias="titleAndDescriptionName">Titulek a popis</key>
+    <key alias="titleAndDescriptionDescription">Slouží k zadání nějakého popisného textu.</key>
+    <key alias="titleAndDescriptionCaptionLabel">Titulek</key>
+    <key alias="titleAndDescriptionCaptionDescription">Zadejte titulek.</key>
+    <key alias="titleAndDescriptionBodyTextLabel">Textové pole</key>
+    <key alias="titleAndDescriptionBodyTextDescription">Zadejte zkopírovaný text.</key>
+
+    <key alias="longAnswerName">Dlouhá odpověď</key>
+    <key alias="longAnswerDescription">Vykreslí textové pole určené pro delší odpovědi.</key>
+    <key alias="longAnswerDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="longAnswerDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+    <key alias="longAnswerPlaceholderLabel">Zástupná hodnota</key>
+    <key alias="longAnswerPlaceholderDescription">Zadejte zástupnou hodnotu.</key>
+    <key alias="longAnswerShowLabelLabel">Zobrazit popisek</key>
+    <key alias="longAnswerShowLabelDescription">Určete, zda se má při vykreslování formuláře zobrazit popisek pole.</key>
+    <key alias="longAnswerAutocompleteAttributeLabel">Atribut Automatické dokončování</key>
+    <key alias="longAnswerAutocompleteAttributeDescription">Volitelně zadejte hodnotu atributu automatického dokončování.</key>
+    <key alias="longAnswerNumberOfRowsLabel">Počet řádků</key>
+    <key alias="longAnswerNumberOfRowsDescription">Zadejte počet řádků, které se při zadávání zobrazí. </key>
+    <key alias="longAnswerMaximumLengthLabel">Maximální délka</key>
+    <key alias="longAnswerMaximumLengthDescription">Zadejte maximální povolený počet znaků.</key>
+
+    <key alias="shortAnswerName">Krátká odpověď</key>
+    <key alias="shortAnswerDescription">Vykreslí textové vstupní pole pro krátké odpovědi.</key>
+    <key alias="shortAnswerDefaultValueLabel">Výchozí hodnota</key>
+    <key alias="shortAnswerDefaultValueDescription">Zadejte výchozí hodnotu.</key>
+    <key alias="shortAnswerPlaceholderLabel">Zástupná hodnota</key>
+    <key alias="shortAnswerPlaceholderDescription">Zadejte zástupnou hodnotu.</key>
+    <key alias="shortAnswerShowLabelLabel">Zobrazit popisek</key>
+    <key alias="shortAnswerShowLabelDescription">Určete, zda se má při vykreslování formuláře zobrazit popisek pole.</key>
+    <key alias="shortAnswerMaximumLengthLabel">Počet řádků</key>
+    <key alias="shortAnswerMaximumLengthDescription">Zadejte maximální povolený počet znaků.</key>
+    <key alias="shortAnswerFieldTypeLabel">Typ pole</key>
+    <key alias="shortAnswerFieldTypeDescription">Vyberte typ očekávaných informací.</key>
+    <key alias="shortAnswerAutocompleteAttributeLabel">Atribut Automatické dokončování</key>
+    <key alias="shortAnswerAutocompleteAttributeDescription">Volitelně zadejte hodnotu atributu automatického dokončování.</key>
+  </area>
+
+  <area alias="formProviderWorkflows">
+    <key alias="changeRecordStateName">Změnit stav záznamu</key>
+    <key alias="changeRecordStateDescription">Změní stav zpracovávaného záznamu, když odpovídá slovu.</key>
+    <key alias="changeRecordStateWordsLabel">Slova</key>
+    <key alias="changeRecordStateWordsDescription">Seznam slov, která se mají porovnat. Oddělená čárkou.</key>
+    <key alias="changeRecordStateActionLabel">Akce</key>
+    <key alias="changeRecordStateActionDescription">Co se má při shodě udělat</key>
+
+    <key alias="postAsXMLName">Odeslat jako XML</key>
+    <key alias="postAsXMLDescription">Odesílá formulář jako XML na adresu URL.</key>
+    <key alias="postAsXMLUrlLabel">URL</key>
+    <key alias="postAsXMLUrlDescription">Zadejte adresu URL, na kterou se má formulář odeslat.</key>
+    <key alias="postAsXMLMethodLabel">Metoda</key>
+    <key alias="postAsXMLMethodDescription">POST nebo GET.</key>
+    <key alias="postAsXMLXsltFileLabel">Soubor XSLT</key>
+    <key alias="postAsXMLXsltFileDescription">Transformujte XML před odesláním.</key>
+    <key alias="postAsXMLFieldsLabel">Pole</key>
+    <key alias="postAsXMLFieldsDescription">Namapujte potřebná pole.</key>
+    <key alias="postAsXMLUsernameLabel">Uživatel</key>
+    <key alias="postAsXMLUsernameDescription">(nepovinné)</key>
+    <key alias="postAsXMLPasswordLabel">Heslo</key>
+    <key alias="postAsXMLPasswordDescription">(nepovinné)</key>
+
+    <key alias="sendFormToURLName">Odeslat formulář na URL</key>
+    <key alias="sendFormToURLDescription">Odešle formulář na URL jako HTTP POST nebo GET.</key>
+    <key alias="sendFormToURLUrlLabel">URL</key>
+    <key alias="sendFormToURLUrlDescription">Zadejte adresu URL, na kterou se má formulář odeslat.</key>
+    <key alias="sendFormToURLMethodLabel">Metoda</key>
+    <key alias="sendFormToURLMethodDescription">POST nebo GET.</key>
+    <key alias="sendFormToURLStandardFieldsLabel">Standardní pole</key>
+    <key alias="sendFormToURLStandardFieldsDescription">Namapujte libovolné standardní informace formuláře, které chcete odeslat.</key>
+    <key alias="sendFormToURLFieldsLabel">Pole</key>
+    <key alias="sendFormToURLFieldsDescription">Namapujte potřebná pole.</key>
+    <key alias="sendFormToURLUsernameLabel">Uživatel</key>
+    <key alias="sendFormToURLUsernameDescription">(nepovinné)</key>
+    <key alias="sendFormToURLPasswordLabel">Heslo</key>
+    <key alias="sendFormToURLPasswordDescription">(nepovinné)</key>
+
+    <key alias="saveAsAnXMLFileName">Uložit jako soubor XML</key>
+    <key alias="saveAsAnXMLFileDescription">Uloží výsledek formuláře jako soubor XML pomocí XSLT.</key>
+    <key alias="saveAsAnXMLFilePathLabel">Cesta</key>
+    <key alias="saveAsAnXMLFilePathDescription">Cesta k umístění souboru.</key>
+    <key alias="saveAsAnXMLFileExtensionLabel">Přípona</key>
+    <key alias="saveAsAnXMLFileExtensionDescription">Přípona souboru.</key>
+    <key alias="saveAsAnXMLFileXsltFileLabel">Soubor XSLT</key>
+    <key alias="saveAsAnXMLFileXsltFileDescription">Transformuje XML před uložením.</key>
+
+    <key alias="saveAsUmbracoContentNodeName">Uložit jako uzel obsahu</key>
+    <key alias="saveAsUmbracoContentNodeDescription">Uloží hodnoty formuláře jako uzel obsahu pomocí zadaného typu dokumentu.</key>
+    <key alias="saveAsUmbracoContentNodeFieldsLabel">Typ dokumentu</key>
+    <key alias="saveAsUmbracoContentNodeFieldsDescription">Mapuje typ dokumentu.</key>
+    <key alias="saveAsUmbracoContentNodePublishLabel">Publikovat</key>
+    <key alias="saveAsUmbracoContentNodePublishDescription">Okamžitě publikuje uzel.</key>
+    <key alias="saveAsUmbracoContentNodeRootNodeLabel">Uložit umístění</key>
+    <key alias="saveAsUmbracoContentNodeRootNodeDescription">Zvolte umístění, kam se má vytvořený uzel obsahu uložit.</key>
+
+    <key alias="sendEmailName">Odeslat e-mail</key>
+    <key alias="sendEmailDescription">Odeslání výsledku formuláře na e-mailovou adresu.</key>
+    <key alias="sendEmailEmailLabel">E-mail příjemce</key>
+    <key alias="sendEmailEmailDescription">Zadejte e-mailovou adresu (adresy) příjemce.</key>
+    <key alias="sendEmailCcEmailLabel">Kopie Email</key>
+    <key alias="sendEmailCcEmailDescription">Zadejte e-mailové adresy Kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendEmailBccEmailLabel">Skrytá kopie Email</key>
+    <key alias="sendEmailBccEmailDescription">Zadejte e-mailové adresy Skrytá kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendEmailSenderEmailLabel">E-mail odesílatele</key>
+    <key alias="sendEmailSenderEmailDescription">Zadejte e-mail odesílatele (pokud je prázdný, použije se nastavení z konfigurace).</key>
+    <key alias="sendEmailReplyToEmailLabel">Odpovědět na e-mail</key>
+    <key alias="sendEmailReplyToEmailDescription">Zadejte e-mailovou adresu, kam bude poslána odpověď (pokud je vyžadována).</key>
+    <key alias="sendEmailSubjectLabel">Předmět</key>
+    <key alias="sendEmailSubjectDescription">Zadejte předmět.</key>
+    <key alias="sendEmailMessageLabel">Zpráva</key>
+    <key alias="sendEmailMessageDescription">Zadejte úvodní zprávu.</key>
+    <key alias="sendEmailAttachmentLabel">Přílohy</key>
+    <key alias="sendEmailAttachmentDescription">Připojte k e-mailu nahrané soubory.</key>
+
+    <key alias="sendEmailWithTemplateRazorName">Odeslat e-mail se šablonou (Razor)</key>
+    <key alias="sendEmailWithTemplateRazorDescription">Odeslání výsledku formuláře na e-mailovou adresu/adresy pomocí šablony Razor .cshtml.</key>
+    <key alias="sendEmailWithTemplateRazorEmailLabel">E-mail příjemce</key>
+    <key alias="sendEmailWithTemplateRazorEmailDescription">Zadejte e-mailovou adresu (adresy) příjemce.</key>
+    <key alias="sendEmailWithTemplateRazorCcEmailLabel">Kopie Email</key>
+    <key alias="sendEmailWithTemplateRazorCcEmailDescription">Zadejte e-mailové adresy Kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendEmailWithTemplateRazorBccEmailLabel">Skrytá kopie Email</key>
+    <key alias="sendEmailWithTemplateRazorBccEmailDescription">Zadejte e-mailové adresy Skrytá kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendEmailWithTemplateRazorSenderEmailLabel">E-mail odesílatele</key>
+    <key alias="sendEmailWithTemplateRazorSenderEmailDescription">Zadejte e-mail odesílatele (pokud je prázdný, použije se nastavení z konfigurace).</key>
+    <key alias="sendEmailWithTemplateRazorReplyToEmailLabel">Odpovědět na e-mail</key>
+    <key alias="sendEmailWithTemplateRazorReplyToEmailDescription">Zadejte e-mailovou adresu, kam bude poslána odpověď (pokud je vyžadována).</key>
+    <key alias="sendEmailWithTemplateRazorSubjectLabel">Předmět</key>
+    <key alias="sendEmailWithTemplateRazorSubjectDescription">Zadejte předmět.</key>
+    <key alias="sendEmailWithTemplateRazorRazorViewFilePathLabel">Šablona e-mailu</key>
+    <key alias="sendEmailWithTemplateRazorRazorViewFilePathDescription">Cesta k Razor zobrazení, které chcete použít při generování e-mailu. Šablony e-mailů jsou uloženy na adrese /views/partials/forms/emails.</key>
+    <key alias="sendEmailWithTemplateRazorAttachmentLabel">Přílohy</key>
+    <key alias="sendEmailWithTemplateRazorAttachmentDescription">Připojte k e-mailu nahrané soubory.</key>
+
+    <key alias="sendXSLTTransformedEmailName">Odeslání e-mailu transformovaného pomocí XSLT</key>
+    <key alias="sendXSLTTransformedEmailDescription">Odeslání výsledku formuláře na e-mailovou adresu.</key>
+    <key alias="sendXSLTTransformedEmailEmailLabel">E-mail příjemce</key>
+    <key alias="sendXSLTTransformedEmailEmailDescription">Zadejte e-mailovou adresu (adresy) příjemce.</key>
+    <key alias="sendXSLTTransformedEmailCcEmailLabel">Kopie Email</key>
+    <key alias="sendXSLTTransformedEmailCcEmailDescription">Zadejte e-mailové adresy Kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendXSLTTransformedEmailBccEmailLabel">Skrytá kopie Email</key>
+    <key alias="sendXSLTTransformedEmailBccEmailDescription">Zadejte e-mailové adresy Skrytá kopie (pokud jsou vyžadovány).</key>
+    <key alias="sendXSLTTransformedEmailSenderEmailLabel">E-mail odesílatele</key>
+    <key alias="sendXSLTTransformedEmailSenderEmailDescription">Zadejte e-mail odesílatele (pokud je prázdný, použije se nastavení z konfigurace).</key>
+    <key alias="sendXSLTTransformedEmailReplyToEmailLabel">Odpovědět na e-mail</key>
+    <key alias="sendXSLTTransformedEmailReplyToEmailDescription">Zadejte e-mailovou adresu, kam bude poslána odpověď (pokud je vyžadována).</key>
+    <key alias="sendXSLTTransformedEmailSubjectLabel">Předmět</key>
+    <key alias="sendXSLTTransformedEmailSubjectDescription">Zadejte předmět.</key>
+    <key alias="sendXSLTTransformedEmailXsltFileLabel">Soubor XSLT</key>
+    <key alias="sendXSLTTransformedEmailXsltFileDescription">Transformujte XML před odesláním e-mailu.</key>
+
+    <key alias="slackLegacyName">Slack (odkaz)</key>
+    <key alias="slackLegacyDescription">Odesílá data formuláře do konkrétního kanálu na Slacku pomocí starších tokenů.</key>
+    <key alias="slackLegacyTokenLabel">Token API</key>
+    <key alias="slackLegacyTokenDescription">Token API Slack.</key>
+    <key alias="slackLegacyChannelLabel">Kanál</key>
+    <key alias="slackLegacyChannelDescription">Kanál Slack, kam se má posílat údaj.</key>
+    <key alias="slackLegacyUsernameLabel">Uživatelské jméno</key>
+    <key alias="slackLegacyUsernameDescription">Uživatelské jméno nebo bot, pod kterým se má příspěvek odeslat.</key>
+    <key alias="slackLegacyAvatarUrlLabel">Avatar URL</key>
+    <key alias="slackLegacyAvatarUrlDescription">Úplná adresa URL (včetně http/https) obrázku avataru.</key>
+
+    <key alias="slackName">Slack</key>
+    <key alias="slackDescription">Odesílá data formuláře do konkrétního kanálu na Slacku pomocí webhooku.</key>
+    <key alias="slackWebhookUrlLabel">Adresa URL webhooku</key>
+    <key alias="slackWebhookUrlDescription">Adresa URL webhooku na Slacku.</key>
+  </area>
+
+  <area alias="formProviderDataSources">
+    <key alias="sQLDatabaseName">Databáze SQL</key>
+    <key alias="sQLDatabaseDescription">Připojí se k libovolné tabulce databáze podporované OLEDB a vytvoří z ní datový zdroj.</key>
+    <key alias="sQLDatabaseConnectionLabel">Připojovací řetězec</key>
+    <key alias="sQLDatabaseConnectionDescription">Připojovací řetězec kompatibilní s OleDB.</key>
+    <key alias="sQLDatabaseTableLabel">Název tabulky</key>
+    <key alias="sQLDatabaseTableDescription">Název tabulky databáze.</key>
+  </area>
+
+  <area alias="formProviderPrevalueSources">
+    <key alias="dataSourceName">Zdroj dat</key>
+    <key alias="dataSourceDescription">Ukládá hodnoty v tabulce předběžných hodnot.</key>
+
+    <key alias="getValuesFromTextfileName">Získat hodnoty z textového souboru</key>
+    <key alias="getValuesFromTextfileDescription">Nahrání textového souboru, který obsahuje předběžné hodnoty.</key>
+    <key alias="getValuesFromTextfileTextFileLabel">Textový soubor</key>
+    <key alias="getValuesFromTextfileTextFileDescription">Soubor obsahující předběžné hodnoty (oddělené novými řádky).</key>
+
+    <key alias="umbracoDocumentsName">Umbraco Dokumenty</key>
+    <key alias="umbracoDocumentsDescription">Použije uzly z určitého zdroje jako předběžné hodnoty.</key>
+    <key alias="umbracoDocumentsRootNodeLabel">Kořenový uzel (Root node)</key>
+    <key alias="umbracoDocumentsRootNodeDescription">Zdroj, ze kterého se mají uzly načítat.</key>
+    <key alias="umbracoDocumentsUseCurrentPageLabel">Použije aktuální stránku jako kořen</key>
+    <key alias="umbracoDocumentsUseCurrentPageDescription">Nefunguje v režimu náhledu.</key>
+    <key alias="umbracoDocumentsDocTypeLabel">Typ dokumentu</key>
+    <key alias="umbracoDocumentsDocTypeDescription">Typ uzlů, které chcete použít.</key>
+    <key alias="umbracoDocumentsListGrandChildrenLabel">Vypsat všechny potomky</key>
+    <key alias="umbracoDocumentsListGrandChildrenDescription">Neomezuje se na potomky, ale zahrnuje i další úrovně.</key>
+    <key alias="umbracoDocumentsOrderByLabel">Seřadit podle</key>
+    <key alias="umbracoDocumentsOrderByDescription">Zvolte, jak se mají předhodnoty seřadit.</key>
+
+    <key alias="sQLDatabaseName">SQL databáze</key>
+    <key alias="sQLDatabaseDescription">Připojí se k databázové tabulce kompatibilní s OLEDB a udělá z ní zdroj předhodnot.</key>
+    <key alias="sQLDatabaseConnectionLabel">Připojovací řetězec</key>
+    <key alias="sQLDatabaseConnectionDescription">Řetězec připojení kompatibilní s OleDB.</key>
+    <key alias="sQLDatabaseConnectionStringLabel">Připojovací řetězec z web.config</key>
+    <key alias="sQLDatabaseConnectionStringDescription">Zvolí řetězec připojení (musí být kompatibilní s OleDB).</key>
+    <key alias="sQLDatabaseTableLabel">Název tabulky</key>
+    <key alias="sQLDatabaseTableDescription"></key>
+    <key alias="sQLDatabaseKeyColumnLabel">Klíčový sloupec</key>
+    <key alias="sQLDatabaseKeyColumnDescription">Sloupec obsahující klíče.</key>
+    <key alias="sQLDatabaseValueColumnLabel">Hodnota Sloupec</key>
+    <key alias="sQLDatabaseValueColumnDescription">Sloupec obsahující hodnoty.</key>
+
+    <key alias="umbracoDataTypePreValueName">Datový typ Umbraco předhodnoty</key>
+    <key alias="umbracoDataTypePreValueDescription">Připojí se k datovému typu Umbraco a použije jeho sbírku předhodnot.</key>
+    <key alias="umbracoDataTypePreValuesDataTypeIdLabel">Datový typ</key>
+    <key alias="umbracoDataTypePreValuesDataTypeIdDescription">Datový typ, který se má použít.</key>
+  </area>
+
+  <area alias="formProviderExportTypes">
+    <key alias="excelFileName">Soubor Excel</key>
+    <key alias="excelFileDescription">Exportuje všechna data do Excelu.</key>
+
+    <key alias="saveAllUploadedFilesInDiskStructureName">Uložit všechny nahrané soubory (ve struktuře disku)</key>
+    <key alias="saveAllUploadedFilesInDiskStructureDescription">Exportuje všechny soubory , které se nahrávají ze zadaných formulářů, do zip archivu. Organizace souborů odpovídá jejich struktuře na disku.</key>
+
+    <key alias="saveAllUploadedFilesByEntryName">Uložit všechny nahrané soubory (podle zadání)</key>
+    <key alias="saveAllUploadedFilesByEntryDescription">Exportuje všechny soubory , které se nahrávají ze zadaných formulářů, do zip archivu. Organizace souborů je do podsložek dle zadání.</key>
+  </area>
+
+  <area alias="formRecordSetActions">
+    <key alias="deleteConfirm">Opravdu chcete tyto položky odstranit?</key>
+  </area>
+</language>

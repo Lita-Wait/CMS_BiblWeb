@@ -50,14 +50,19 @@
         <div class="mainSliderContainer">
             <div class="mainSlider">
                 <ul>
+                @{
+                    var imagesSlider = Model.ImagesSlider.ToList();
+                    var titlesSlider = Model.HeadersSlider.Split(';').ToList();
+                    var texts = Model.TextsSlider.ToString().Split(';').ToList();
+                }
                      <!--SLIDE 1  -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/sliders/slide1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="@(imagesSlider[0].MediaUrl())" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                        <div class="caption sfr str" data-x="center" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">
-                            <h2>Центральная библиотека</h2>
+                            <h2>@(titlesSlider[0])</h2>
                        </div>
                        <div class="caption sfl stl" data-x="center" data-y="225" data-speed="500" data-start="1900" data-easing="easeOutBack">
-                            <div class="cont-row">Новоуральского городского округа</div>
+                            <div class="cont-row">@(texts[0])</div>       
                        </div>
                        <div class="caption sfb stb" data-x="center" data-y="375" data-hoffset="0" data-speed="500" data-start="1900" data-easing="easeOutBack">
                            <a href="/aboutus" type="button" class="btn btn-default">Подробнее</a>
@@ -65,14 +70,14 @@
                     </li>  
                      <!--SLIDE 2 -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/sliders/slide2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="@(imagesSlider[1].MediaUrl())" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
                        <div class="caption sfr str" data-x="center" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">
-                            <h2>Польза для ребенка</h2>
+                            <h2>@(titlesSlider[1])</h2>
                        </div>
 
                        <div class="caption sfl stl" data-x="center" data-y="225" data-speed="500" data-start="1900" data-easing="easeOutBack">
-                            <div class="cont-row">Чиатй вместе с нами!</div>
+                            <div class="cont-row">@(texts[1])</div>
                        </div>
                        
                        <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="tools"><img src="~/images/sliders/man.png" alt="brifcase"></div>
@@ -80,20 +85,13 @@
                     </li>  
                      <!--SLIDE 3 -->
                     <li data-transition="boxslide" data-slotamount="7">
-                       <img src="~/images/sliders/slide3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                       <img src="@(imagesSlider[2].MediaUrl())" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                        
                        <div class="caption sfr str" data-x="-100" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">
-                            <h2>Территория для научной работы</h2>
+                            <h2>@(titlesSlider[2])</h2>
                        </div>
-                       @*<div class="caption sfl stl" data-x="-100" data-y="190" data-speed="500" data-start="1900" data-easing="easeOutBack">
-                            <h4>Читай вместе с Нами!</h4>
-                       </div>*@
                        <div class="caption sfl stl" data-x="-100" data-y="225" data-speed="500" data-start="1900" data-easing="easeOutBack">
-                            <div class="cont-row">Предоставление места для работы и научной деятельности. 
-                                <br />В библиотеке имеются необходимые условия для 
-                                <br />полноценной научно-исследовательской деятельности. 
-                                <br />В читальном зале можно проводить выставки и 
-                                <br />конференции, презентации и творческие вечера.</div>
+                            <div class="cont-row">@Model.Value("lastSliderText")</div>
                        </div>
                        <div class="caption skewfromright skewtoright" data-x="right" data-y="130" data-hoffset="176" data-speed="500" data-start="1900" data-easing="easeOutBack"><div class="sketch"><img src="~/images/sliders/man.png" alt="brifcase"></div>
                        </div>                       
@@ -112,11 +110,14 @@
                 <div class="sectionSubTitle">в библиотеке</div>
             </div>
             <div class="row m0 text-center">
+            @{
+                var ServiceTitles = Model.ServiceTitles.Split(';').ToList();
+            }
                 <div class="col-sm-3">
                     <div class="row m0 service">
                         <div class="row m0 innerRow">
                             <i class="fa fa-laptop"></i>
-                            <div class="serviceName" data-hover="Онлайн-зал">Онлайн-зал</div>
+                            <div class="serviceName" data-hover="@(ServiceTitles[0])">@(ServiceTitles[0])</div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +125,7 @@
                     <div class="row m0 service">
                         <div class="row m0 innerRow">
                             <i class="fa fa-film"></i>
-                            <div class="serviceName" data-hover="Медиатека">Медиатека  </div>
+                            <div class="serviceName" data-hover="@(ServiceTitles[1])">@(ServiceTitles[1])</div>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                     <div class="row m0 service">
                         <div class="row m0 innerRow">
                             <i class="fa fa-clock-o"></i>
-                            <div class="serviceName" data-hover="Досуг">Досуг</div>
+                            <div class="serviceName" data-hover="@(ServiceTitles[2])">@(ServiceTitles[2])</div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +141,7 @@
                     <div class="row m0 service">
                         <div class="row m0 innerRow">
                             <i class="fa fa-building-o"></i>
-                            <div class="serviceName" data-hover="Абонемент">Абонемент</div>
+                            <div class="serviceName" data-hover="@(ServiceTitles[3])">@(ServiceTitles[3])</div>
                         </div>
                     </div>
                 </div>
@@ -168,103 +169,35 @@
             </ul>
         </div>
         <div class="row projects m0" id="container">
-            <!--Project 1-->
-            <div class="project Events">
-                <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="День защиты детей🌟 (завершено)">
-                    <img src="~/images/projects/project1.jpg" alt="Project 1" class="projectImg">
+            @{
+                var typesProject = Model.TypeProjects.Split(';').ToList();
+                var imagesProject = Model.Images.ToList();
+                var titlesProject = Model.TitleProjects.Split(';').ToList();
+                var statusesProject = Model.StatusProjects.Split(';').ToList();
+            }
+            @for (int i = 0; i < Model.Images.Count(); i++)
+            {
+            <div class="project @(typesProject[i])">
+
+                <a href="@(imagesProject[i].MediaUrl())" data-lightbox="project" data-title="@(titlesProject[i]) @(statusesProject[i])">
+                    <img src="@(imagesProject[i].MediaUrl())" alt="Project 1" class="projectImg">
                 </a>
+
                 <div class="projectDetails row m0">
+
                     <div class="fleft nameType">
-                        <div class="row m0 projectName">День защиты детей🌟</div>
-                        <div class="row m0 projectType">завершено</div>
+                        <div class="row m0 projectName">@(titlesProject[i])</div>
+                        <div class="row m0 projectType">@(statusesProject[i])</div>
                     </div>
 
                     <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project1.jpg" data-lightbox="project" data-title="День защиты детей🌟 (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
+                        <a href="@(imagesProject[i].MediaUrl())" data-lightbox="project" data-title="@(titlesProject[i]) @(statusesProject[i])" class="btn btn-default"><i class="fa fa-search"></i></a>
                         <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
                     </div>
+
                 </div>
             </div>
-            <!--Project 2-->
-            <div class="project Contests">
-                <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Атомграды России (в разработке)">
-                    <img src="~/images/projects/project2.jpg" alt="Project 2" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">Атомграды России</div>
-                        <div class="row m0 projectType">в разработке</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project2.jpg" data-lightbox="project" data-title="Атомграды России (в разработке)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!--Project 3-->
-            <div class="project Stock">
-                <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Награждение победителей (завершено)">
-                    <img src="~/images/projects/project3.jpg" alt="Project 3" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">Атомграды России</div>
-                        <div class="row m0 projectType">завершено</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project3.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!--Project 4-->
-            <div class="project Exhibitions">
-                <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="День защиты детей🌟 (подготовка)">
-                    <img src="~/images/projects/project4.jpg" alt="Project 4" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">День защиты детей🌟</div>
-                        <div class="row m0 projectType">подготовка</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project4.jpg" data-lightbox="project" data-title="Название проекта (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!--Project 5-->
-            <div class="project Holidays">
-                <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="День защиты детей🌟 (завершено)">
-                    <img src="~/images/projects/project5.jpg" alt="Project 5" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">День защиты детей🌟</div>
-                        <div class="row m0 projectType">завершено</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project5.jpg" data-lightbox="project" data-title="Название проекта (завершено)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!--Project 6-->
-            <div class="project Other">
-                <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Праздник лета (подготовка)">
-                    <img src="~/images/projects/project6.jpg" alt="Project 6" class="projectImg">
-                </a>
-                <div class="projectDetails row m0">
-                    <div class="fleft nameType">
-                        <div class="row m0 projectName">Праздник лета</div>
-                        <div class="row m0 projectType">подготовка</div>
-                    </div>
-                    <div class="fright projectIcons btn-group" role="group">
-                        <a href="~/images/projects/project6.jpg" data-lightbox="project" data-title="Праздник лета (подготовка)" class="btn btn-default"><i class="fa fa-search"></i></a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-file-o"></i></a>
-                    </div>
-                </div>
-            </div>
+            }  
         </div>        
     </section> <!--Projects-->
     
@@ -342,30 +275,28 @@
         <div class="container">
             <div class="row sectionTitles">
                 <h2 class="sectionTitle whiteTC">Последние комментарии</h2>
-                <div class="sectionSubTitle whiteTC">справедливые</div>
+                <div class="sectionSubTitle whiteTC">интересные</div>
             </div>
             <div class="row">
                 <div class="owl-carousel testimonialSlider row m0">
-                    <div class="item">
+                @{
+                    var testImages = Model.TestimonialImages.ToList();
+                    var testNames = Model.TestimonialNames.Split(';').ToList();
+                    var testTexts = Model.TestimonialTexts.Split(';').ToList();
+                }
+                @for(int i = 0; i < Model.TestimonialImages.Count(); i++)
+                {
+                     <div class="item">
                         <div class="clientPhoto row m0">
-                            <img src="~/images/testimonial/test1.jpg" alt="">
+                            <img src="@(testImages[i].MediaUrl())" alt="">
                         </div>
-                        <div class="clientNameTitle row m0">Данил Балякин</div>
+                        <div class="clientNameTitle row m0">@(testNames[i])</div>
                         <div class="arrow row m0">
                             <img src="~/images/testimonial/arrow.png">
                         </div>
-                        <div class="testimonial row m0">Мне очень понравилось в библиотеке!</div>
+                        <div class="testimonial row m0">@(testTexts[i])</div>
                     </div>
-                    <div class="item">
-                        <div class="clientPhoto row m0">
-                            <img src="~/images/testimonial/test2.jpg" alt="">
-                        </div>
-                        <div class="clientNameTitle row m0">Лена Брагина</div>
-                        <div class="arrow row m0">
-                            <img src="~/images/testimonial/arrow.png">
-                        </div>
-                        <div class="testimonial row m0">Пришли с ребёнком на праздник, были в восторге!</div>
-                    </div>
+                }
                 </div>
             </div>
         </div>

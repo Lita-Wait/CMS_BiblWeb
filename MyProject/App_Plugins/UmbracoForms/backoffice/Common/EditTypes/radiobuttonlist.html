@@ -1,0 +1,6 @@
+<div ng-controller="UmbracoForms.EditTypes.RadioButtonListController as vm">
+  <label class="umb-forms-entry-edit-list-button" ng-repeat="preValue in detail.fieldPreValues">
+    <input type="radio" ng-value="preValue" ng-model="vm.value" ng-change="vm.change()" /><span>{{preValue}}</span>
+  </label>
+  <div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>
+</div>

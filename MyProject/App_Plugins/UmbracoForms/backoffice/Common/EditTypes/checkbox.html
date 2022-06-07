@@ -1,0 +1,6 @@
+<div ng-controller="UmbracoForms.EditTypes.CheckboxController as vm">
+  <umb-toggle checked="vm.checked"
+              on-click="vm.change()">
+  </umb-toggle>
+  <div class="umb-validation-label" ng-repeat="validationMessage in detail.validationMessages">{{validationMessage}}</div>
+</div>

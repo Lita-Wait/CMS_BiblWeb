@@ -1,0 +1,23 @@
+<div class="umb-pane" ng-controller="UmbracoForms.Editors.FormSecurity.DeleteController as vm">
+  <div>
+    <p>
+      <strong>{{vm.title}}</strong>
+    </p>
+    <p>
+      <localize key="formSecurity_deleteUserRecordNote"></localize>
+    </p>
+    <div class="btn-toolbar umb-btn-toolbar">
+      <div class="control-group umb-control-group">
+        <a href="" class="btn btn-link" ng-click="vm.cancelDelete()"><localize key="general_cancel">Cancel</localize></a>
+
+        <umb-button action="vm.performDelete(currentNode.id)"
+                    type="button"
+                    button-style="danger"
+                    state="vm.buttonState"
+                    label="OK"
+                    disabled="vm.buttonState === 'busy'">
+        </umb-button>
+      </div>
+    </div>
+  </div>
+</div>
