@@ -1636,16 +1636,18 @@ div#carousel ~ span {
   background: #f2eded;
   padding: 0 40px 40px;
   position: relative;
+  height: 200px;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-.blog .blogInner .postExcerpts .postExcerptInner {
+ .blog .blogInner .postExcerpts .postExcerptInner {
   margin-top: -40px;
   padding: 20px;
   font-family: 'Lora', sans-serif;
   background: #FFF;
+  overflow: auto;
   position: relative;
-}
+ }
 .blog .blogInner .postExcerpts .postExcerptInner a.postTitle h4 {
   font-size: 17px;
   color: #000;
@@ -1765,13 +1767,14 @@ div#carousel ~ span {
     font-size: 18px;
     margin-right: 20px;
   }
-  .blog .blogInner .postExcerpts {
-    background: #f2eded;
-    padding: 0 25px 25px;
-    position: relative;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
+ .blog .blogInner .postExcerpts {
+  background: #f2eded;
+  padding: 0 25px 25px;
+  position: relative;
+  height: 200px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+ }
   .blog .blogInner .postExcerpts .postExcerptInner {
     margin-top: -25px;
     padding: 20px;
@@ -2445,16 +2448,18 @@ div#carousel ~ span {
   min-height: 281px;
   text-align: center;
   padding-top: 80px;
-  background: url("../images/cover.jpg") no-repeat scroll center center #2362ae;
+ /* background: url("../images/cover.jpg") no-repeat scroll center center #2362ae;*/
+
 }
-#pageCover img.pageCover {
+ #pageCover img.pageCover {
   position: absolute;
   top: 0;
   left: 0;
+  max-height: 281px;
   width: 100%;
   max-width: 100%;
   z-index: -1;
-}
+ }
 #pageCover .pageTitle {
   color: #FFF;
   padding: 0 27px;
@@ -2494,15 +2499,18 @@ div#carousel ~ span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#pageCover.blogPage {
+/*#pageCover.blogPage {
   background-image: url("../images/cover.jpg");
 }
 #pageCover.projectPage {
   background-image: url("../images/cover.jpg");
 }
-    #pageCover.servicePage {
-        background-image: url("../images/cover.jpg");
-    }
+#pageCover.servicePage {
+    background-image: url("../images/cover.jpg");
+}
+ #pageCover.aboutusPage {
+  background-image: url("../images/cover.jpg");
+ }*/
 /*----------------------------------------------------------------*/
 /*Pagination */
 .paginationRow {

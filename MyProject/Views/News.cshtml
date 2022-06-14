@@ -44,7 +44,7 @@
     </nav> <!--Main Nav-->
     
  <section id="pageCover" class="row blogPage">
-        
+         <img src="/images/cover.jpg" alt="" class="pageCover">
         <div class="row pageTitle">Наши новости</div>
         <div class="row pageBreadcrumbs">
             <ol class="breadcrumb">
@@ -59,120 +59,34 @@
             <div class="row">
                 <div class="col-sm-9">
                     <div class="row">
-                        <div class="col-sm-6 blog">
+            @{
+               
+                var images = Model.ImagesNew.ToList();
+                var headers = Model.HeadersNew.Split(';').ToList();
+                var texts = Model.TetxNew.ToString().Split(';').ToList();
+                var dates = Model.DatesNew.Split(';').ToList();
+            }
+            @for (int i = 0; i < images.Count(); i++)
+            {
+              <div class="col-sm-6 blog">
                             <div class="row m0 blogInner">
                                 <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
+                                    <i class="fa fa-calendar"></i> @(dates[i])
                                 </div>
                                 <div class="row m0 featureImg">
                                     <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
+                                        <img src="@(images[i].MediaUrl())" alt="" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="row m0 postExcerpts">
                                     <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
+                                        <a href="single-post.html" class="postTitle row m0"><h4>@(headers[i])</h4></a>
+                                        <p>@(texts[i])</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 blog">
-                            <div class="row m0 blogInner">
-                                <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
-                                </div>
-                                <div class="row m0 featureImg">
-                                    <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="row m0 postExcerpts">
-                                    <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 blog">
-                            <div class="row m0 blogInner">
-                                <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
-                                </div>
-                                <div class="row m0 featureImg">
-                                    <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="row m0 postExcerpts">
-                                    <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 blog">
-                            <div class="row m0 blogInner">
-                                <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
-                                </div>
-                                <div class="row m0 featureImg">
-                                    <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="row m0 postExcerpts">
-                                    <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 blog">
-                            <div class="row m0 blogInner">
-                                <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
-                                </div>
-                                <div class="row m0 featureImg">
-                                    <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="row m0 postExcerpts">
-                                    <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 blog">
-                            <div class="row m0 blogInner">
-                                <div class="row m0 blogDateTime">
-                                    <i class="fa fa-calendar"></i> 31 августа 2022
-                                </div>
-                                <div class="row m0 featureImg">
-                                    <a href="single-post.html">
-                                        <img src="~/images/news/new1.jpg" alt="Заголовок новости на сайте" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="row m0 postExcerpts">
-                                    <div class="row m0 postExcerptInner">
-                                        <a href="single-post.html" class="postTitle row m0"><h4>Заголовок новости на сайте</h4></a>
-                                        <p>Стимулирование коммьюнити, пренебрегая деталями, позитивно продуцирует отраслевой стандарт. Формат события поддерживает целевой сегмент рынка. Тем не менее, рекламная кампания переворачивает портрет потребителя.</p>
-                                        @*<a href="single-post.html" class="readMore">Читать далее</a>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            }    
                     </div>
                 </div>
                 @await Umbraco.RenderMacroAsync("Aside")
