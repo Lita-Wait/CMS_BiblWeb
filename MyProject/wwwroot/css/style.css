@@ -2769,10 +2769,11 @@ div#carousel ~ span {
   width: 100%;
   text-align: center;
 }
-#aboutus .member.member3_1 .memImg img {
+ #aboutus .member.member3_1 .memImg img {
   max-width: 100%;
+  max-height: 315px;
   display: inline-block;
-}
+ }
 #aboutus .member.member3_1 .memberIntro {
   text-align: center;
   height: auto;
